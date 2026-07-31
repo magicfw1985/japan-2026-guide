@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🗾 2026暑假·日本12天11晚攻略 · 路小鲜Leo</title>
+<style>
+:root{
+  --sakura:#ff7eb6; --sakura-soft:#ffe3ef; --indigo:#1f3a5f; --indigo-soft:#eaf0f7;
+  --ink:#2b2b2b; --paper:#fdfaf6; --card:#ffffff; --line:#ece3da;
+  --gold:#c8a24b; --green:#3a8d5b; --red:#d9534f; --orange:#e8843c;
+  --shadow:0 4px 18px rgba(31,58,95,.08); --radius:16px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--paper);color:var(--ink);line-height:1.75;font-size:15px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 18px 80px}
+header.hero{background:linear-gradient(135deg,#1f3a5f 0%,#3a5a82 55%,#ff7eb6 140%);color:#fff;padding:46px 20px 38px;text-align:center;border-radius:0 0 28px 28px;box-shadow:var(--shadow)}
+header.hero h1{margin:0 0 10px;font-size:30px;letter-spacing:1px}
+header.hero .sub{opacity:.92;font-size:15px}
+header.hero .tags{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+header.hero .tags span{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:5px 12px;border-radius:20px;font-size:13px}
+section{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px 22px;margin:22px 0;box-shadow:var(--shadow)}
+h2.sec{font-size:22px;margin:0 0 16px;padding-left:14px;border-left:6px solid var(--sakura);color:var(--indigo)}
+h3{font-size:17px;color:var(--indigo);margin:18px 0 8px}
+p{margin:8px 0}
+.meta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:6px}
+.meta-grid .box{background:var(--indigo-soft);border-radius:12px;padding:12px 14px}
+.meta-grid .box b{color:var(--indigo)}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}
+th{background:var(--indigo-soft);color:var(--indigo);font-weight:600}
+tr:nth-child(even) td{background:#fbf8f4}
+.day{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:0;margin:22px 0;box-shadow:var(--shadow);overflow:hidden}
+.day .top{background:linear-gradient(90deg,var(--indigo),#33567d);color:#fff;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.day .top .dname{font-size:18px;font-weight:700}
+.day .top .dmeta{font-size:13px;opacity:.9}
+.day .top .dhotel{font-size:13px;background:rgba(255,255,255,.15);padding:3px 10px;border-radius:14px}
+.day .body{padding:18px 20px}
+.schedule{width:100%;border-collapse:collapse;font-size:13.5px}
+.schedule th{background:var(--sakura-soft);color:#a23b6e;font-weight:700}
+.schedule td{border:1px solid var(--line);padding:8px 9px;vertical-align:top}
+.schedule .t{white-space:nowrap;color:var(--indigo);font-weight:600;width:74px}
+.budget{display:inline-block;background:var(--gold);color:#fff;padding:4px 12px;border-radius:14px;font-size:13px;font-weight:600;margin-top:10px}
+.highlight{color:var(--green);font-weight:600}
+.tip{background:var(--sakura-soft);border-left:4px solid var(--sakura);padding:10px 14px;border-radius:8px;margin:10px 0;font-size:14px}
+.warn{background:#fff4ec;border-left:4px solid var(--orange);padding:10px 14px;border-radius:8px;margin:10px 0;font-size:14px}
+.danger{background:#fdeeee;border-left:4px solid var(--red);padding:10px 14px;border-radius:8px;margin:10px 0;font-size:14px}
+.food{background:var(--indigo-soft);border-left:4px solid var(--indigo);padding:10px 14px;border-radius:8px;margin:10px 0;font-size:14px}
+.kv{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0}
+.kv .item{flex:1;min-width:240px;background:#fbf8f4;border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.kv .item b{color:var(--indigo)}
+.calc{font-size:14px}
+.calc td{font-size:14px}
+.tree{font-family:"SFMono-Regular",Consolas,monospace;font-size:13.5px;background:#fbf8f4;border:1px solid var(--line);border-radius:10px;padding:14px 16px;white-space:pre-wrap;line-height:1.85;color:#33485f}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.chips span{background:var(--indigo-soft);color:var(--indigo);padding:4px 11px;border-radius:14px;font-size:13px}
+footer{text-align:center;color:#8a8a8a;font-size:13px;padding:30px 0 10px}
+.note-ref{color:#b06;font-size:12.5px}
+a{color:#1f6fb5}
+</style>
+</head>
+<body>
+<header class="hero">
+  <h1>🗾 2026暑假 · 日本12天11晚攻略</h1>
+  <div class="sub">关西进 → 名古屋中转 → 关东出 ｜ 父母 + 12岁娃 ｜ 轻松不累 · 省心避坑</div>
+  <div class="tags">
+    <span>👥 2大1小（共3人）</span>
+    <span>📅 8/15–8/26</span>
+    <span>✈️ 去程 KIX 近6:00 落地</span>
+    <span>✈️ 返程 成田→香港 15:45</span>
+    <span>🏨 4城已订房</span>
+    <span>🎆 双花火踩中</span>
+  </div>
+</header>
+<div class="wrap">
+
+<section id="overview">
+  <h2 class="sec">📋 12天总览 · 一目了然</h2>
+  <p>核心逻辑：<b>关西空(KIX)进 → 神户3晚 → 京都3晚 → 名古屋3晚（含吉卜力）→ 横滨2晚 → 成田出（不去东京游览）</b>。去程红眼航班落地近6点，第一天从简并踩中神户港周末花火；返程成田15:45，最后一天倒推10:30前从横滨出发。</p>
+  <table>
+    <tr><th>日期</th><th>城市</th><th>住宿</th><th>当日核心</th><th>交通锚点</th></tr>
+    <tr><td>8/15 周六</td><td>神户</td><td>THE皇家花园CANVAS神户三宫</td><td>抵达 + 神户港花火</td><td>KIX→三宫 机场巴士</td></tr>
+    <tr><td>8/16 周日</td><td>神户</td><td>神户三宫</td><td>有马温泉当日往返</td><td>三宫→有马 巴士</td></tr>
+    <tr><td>8/17 周一</td><td>神户</td><td>神户三宫</td><td>北野异人馆 + 神戸BAL + SPOPEL珍珠</td><td>市内</td></tr>
+    <tr><td>8/18 周二</td><td>京都</td><td>祇园三条</td><td>赴京都 + 站区购物/祇园</td><td>三宫→新神户 Hikari→京都</td></tr>
+    <tr><td>8/19 周三</td><td>京都</td><td>祇园三条</td><td>锦市场 + 河原町购物</td><td>京阪 + 步行</td></tr>
+    <tr><td>8/20 周四</td><td>京都</td><td>祇园三条</td><td>金阁 + 岚山 + 小火车 ⚠️暴走</td><td>岚电 + 嵯峨野小火车</td></tr>
+    <tr><td>8/21 周五</td><td>京都→名古屋</td><td>ANA皇冠假日（金山駅）</td><td>热田神宫 + 大须</td><td>Hikari + 名鉄/地下鉄</td></tr>
+    <tr><td>8/22 周六</td><td>名古屋</td><td>ANA皇冠假日（金山駅）</td><td>荣购物日（橡子共和国+Seant）</td><td>名城线→荣</td></tr>
+    <tr><td>8/23 周日</td><td>名古屋</td><td>ANA皇冠假日（金山駅）</td><td>吉卜力公园（门票已购✅）</td><td>名城線+東山線+Linimo</td></tr>
+    <tr><td>8/23 周日</td><td>名古屋</td><td>ANA皇冠假日</td><td>吉卜力公园</td><td>名城線+東山線+Linimo</td></tr>
+    <tr><td>8/24 周一</td><td>横滨</td><td>相铁酒店乐思横滨</td><td>赴横滨 + 红砖仓库 + 花火</td><td>名古屋→新横滨 Nozomi</td></tr>
+    <tr><td>8/25 周二</td><td>横滨</td><td>相铁酒店乐思横滨</td><td>横滨本地（港未来/中华街/购物）</td><td>市内地铁</td></tr>
+    <tr><td>8/26 周三</td><td>成田</td><td>（无住宿）</td><td>返程 横滨→成田→香港</td><td>横滨→N'EX成田（直达）</td></tr>
+  </table>
+</section>
+
+<section id="transport-inout">
+  <h2 class="sec">✈️ 去程 & 回程交通（航班已订）</h2>
+  <h3>去程 · 8/15 关西机场(KIX) 落地近 6:00</h3>
+  <div class="kv">
+    <div class="item"><b>落地</b>：约 05:55 抵达 KIX（国际航班，T1）。</div>
+    <div class="item"><b>入境+取行李</b>：约 1 小时（国际到达人多，预留充足）。</div>
+    <div class="item"><b>KIX → 神户三宫</b>：关西机场<b>机场巴士（神户空港线）</b>首班约 06:20（T1，已核实；06:00落地赶首班偏紧，实际按约07:00班次规划），到三宫约 65–75min，<b>¥2,200/人</b>（儿童半价；往返 ¥3,700 更划算但只能买纸质票）<span class="note-ref">供参考，以官方为准 · 来源 官网 kate.co.jp（2026-07-23 核实）</span>。备选：南海电铁→难波→阪神电车，便宜但换乘多。</div>
+    <div class="item"><b>到店</b>：THE皇家花园CANVAS神户三宫（三宫站步行约5–10min），约 08:10–08:30 抵达，先寄行李（入住通常 14:00 后）。</div>
+  </div>
+  <div class="tip">💡 落地当天是 <b>8/15 周六</b>，神户港有「周末花火」19:30，步行可达美利坚公园近海，正好落地当晚看——第一天安排从简，不赶景点。</div>
+
+  <h3>回程 · 8/26 成田(NRT) T2 → 香港 15:45 起飞</h3>
+  <div class="kv">
+    <div class="item"><b>航班</b>：成田 T2 飞香港（HK Express UO849），<b>15:45 起飞 / 19:40 落地</b>。</div>
+    <div class="item"><b>到机场时点</b>：国际航班建议提前 2.5–3h，即 <b>12:45–13:15 前到成田</b>。</div>
+    <div class="item"><b>横滨→成田</b>：<b>N'EX 从横滨站直达成田</b>（横滨是 N'EX 停靠站，无需进东京站换乘），约1h30m–1h50m，行李友好、最省心。本次不去东京，故不选需进东京站区换乘的 Skyliner 方案。</div>
+    <div class="item"><b>倒推出发</b>：N'EX 横滨直达成田 T2 约1h26m，含值机缓冲，<b>最晚 11:28 从横滨站上 N'EX#23</b>（12:54 到 T2）。带大件行李 N'EX 车厢有放大件空间。</div>
+  </div>
+  <div class="warn">⚠️ 8/26 是返程日、不住宿。早上退房后行李可寄酒店或横滨站投币寄存，轻装最后逛一圈，10:30 前务必上车。</div>
+</section>
+
+<section id="jrpass">
+  <h2 class="sec">🎫 交通券策略（已评估：不买 JR Pass）</h2>
+  <p>本程新干线只有 <b>3 段</b>（新神户→京都、京都→名古屋、名古屋→新横滨）+ 1 段 <b>N'EX（横滨→成田，非新干线、不去东京市内）</b>，点对点单买远小于全国 JR Pass 7日券（¥50,000/人）。结论：<b>不买 Pass，指定席单买 + 每人一张 IC卡（Suica / ICOCA，全国互通）</b>。</p>
+  <table class="calc">
+    <tr><th>方案</th><th>覆盖</th><th>3人费用（参考）</th><th>结论</th></tr>
+    <tr><td>全国 JR Pass 7日</td><td>新干线全含</td><td>¥50,000×3 = ¥150,000</td><td>❌ 明显亏</td></tr>
+    <tr><td>点对点单买指定席</td><td>本程3段新干线+N'EX实价</td><td>约 ¥73,980</td><td>✅ 省约 ¥8万</td></tr>
+  </table>
+  <div class="kv">
+    <div class="item"><b>新干线订票</b>：提前 1 月在 <b>Smart EX / JR West 官网</b>（英文界面）订指定席保座。</div>
+    <div class="item"><b>IC卡</b>：每人一张 Suica 或 ICOCA，覆盖地铁/私铁/巴士/便利店。</div>
+    <div class="item"><b>不能久走</b>：短途优先打车/出租车替步（日本打车贵，仅必要时用）。</div>
+  </div>
+  <div class="tip">💡 新干线/电车<b>务必核对车次 + 车厢号</b>（小红书高频避雷：同一站台来三趟不同车）。持指定席票对号入座，避免坐错自由席车厢被查。</div>
+</section>
+
+<section id="hotels">
+  <h2 class="sec">🏨 酒店住客实测补充（基于 37 条 OTA 点评核查）</h2>
+  <p>以下信息来自 IMA 知识库「旅行→酒店」文件夹 37 张 OTA 住客点评截图 + 1 条笔记，与线上攻略逐项比对；并已用联网检索（携程 / 去哪儿 / Klook / Trip.com / 一休等）交叉验证真实。每家按「➕ 高价值补充 / ⚠️ 需修正或注意」标注。</p>
+
+  <h3>① THE皇家公园 CANVAS 神户三宫（Day 1-3）</h3>
+  <div class="kv">
+    <div class="item"><b>📍 出口（重要）</b>：最近的三宫站地铁口是楼梯，带行李要到<b>中央东口</b>（有电梯/扶梯），步行 6-7 分钟。攻略只笼统写"步行5-10分"，未区分出口。</div>
+    <div class="item"><b>☕ 周边</b>：酒店旁有 NISHIMURA'S COFFEE（西村咖啡）；右边小路几分钟到商业街；KOHYO 生活大超市在三宫站东口；门前一条路餐厅遍布、神户牛店在不远路口；全家/7-11/罗森随处补货。</div>
+    <div class="item"><b>🧴 备品</b>：一楼有备品区（含面膜、保养品旅行组），不止基本洗漱；房间电视可看 Netflix；<b>无瓶装水，可向前台索取</b>。</div>
+    <div class="item"><b>🍳 餐饮</b>：早餐咖喱饭好吃；退房后可寄存行李，不影响当天行程。</div>
+  </div>
+  <div class="warn">⚠️ <b>修正</b>：① JR三宫距离按 <b>8-10 分钟</b> 预留更稳（攻略写6-8分）；② "无前台人工"偏绝对——实为<b>自助机为主、有工作人员在场协助</b>；③ 夜间安全：点评提到"晚上街头有推销的、很多酒醉的人"，带娃晚归需注意。</div>
+
+  <h3>② Minn 祇园三条（Day 4-6）</h3>
+  <div class="kv">
+    <div class="item"><b>🛎️ 入住避坑（重要）</b>：基本自助办理，提前发的登录密码几乎没用，<b>需人工视频客服（仅日语/英语，无中文）</b>。无出行经验者不推荐独自操作。</div>
+    <div class="item"><b>♨️ 私人温泉（重要）</b>：可租用 90 分钟，¥4,000，最多 6 人使用。</div>
+    <div class="item"><b>🧺 设施</b>：配洗衣烘干一体机+洗衣液；厨房齐全（大冰箱/微波炉/烤箱/水槽）；2023年建成设施新；30平房型，餐厨空间大；位于小路晚上安静，住客欧美人为主；祇园/八坂步行10分、二三年坂20分；沿途便利店；15:00有工作人员值班可协助。</div>
+    <div class="item"><b>🦟 注意</b>：虫子多，第一晚被蚊子咬，建议带驱蚊。附近有同连锁另一家别混淆。</div>
+  </div>
+  <div class="warn">⚠️ <b>修正</b>：步行时间轻微差异——攻略写"1/2号出口步行4分"（指地铁三条京阪站），点评实测"京阪三条站走5分"。两者地下相通但属不同铁路系统、出口编号不同，别走错。</div>
+
+  <h3>③ ANA皇冠假日 Grand Court 名古屋（Day 7-9）</h3>
+  <div class="kv">
+    <div class="item"><b>🚌 永旺免费班车（重要）</b>：酒店提供前往门前永旺购物中心（Aeon热田店）的免费接送巴士。</div>
+    <div class="item"><b>🍸 30楼畅饮 + 行政酒廊（重要）</b>：可免费进入 30 楼畅饮；前台送行政酒廊消费券，20:30 前可去顶楼酒廊一边看夜景一边小酌（仅日/英服务，无中文）。</div>
+    <div class="item"><b>🍽️ 餐饮8折券</b>：入住送酒店内餐饮8折券，可多次使用（2楼自助晚餐可用）。</div>
+    <div class="item"><b>🚪 到达路线</b>：出金山站南口沿棚廊穿美术馆，有酒店后门直达大堂（攻略只写正门路线）；南口出右转不过马路，几步右手边即酒店；附近全家/星巴克/7-11。</div>
+    <div class="item"><b>🛏️ 房间</b>：35平方，3人绰绰有余（日本少有大房）；每天免费给3瓶水（可能因房型不同）；MINIBAR单独收费；前台位置隐蔽藏大墙"洞"里。</div>
+  </div>
+  <div class="warn">⚠️ <b>修正</b>：① 步行时间按<b>南口徒步2分</b>预留（攻略写1分）；② 瓶装水矛盾——点评有"每天3瓶"和"无瓶装水"两种说法，疑因房型（甄选高层 vs 标准），入住时确认；③ 早餐比较单调，性价比不高。</div>
+
+  <h3>④ 相铁酒店 THE SPLAISIR 横滨（Day 10-11）</h3>
+  <div class="kv">
+    <div class="item"><b>🚉 出站路线（超详细）</b>：JR闸口出往西口方向，左前手扶梯（人群聚集处），推行李往右前看有电梯上2楼空中走廊，出电梯左转沿绿植走，见二段式手扶梯，过了往前到<b>第三个入口左转</b>才到4楼checkin专属电梯（前两个别进）。</div>
+    <div class="item"><b>🛎️ 入住/退房</b>：前台在<b>4楼</b>，先登记信息给二维码再隔壁机器扫码办理，自助机有中文界面、扫护照发房卡；退房在房间用电视APP办理（fast checkout）。</div>
+    <div class="item"><b>🧳 行李寄存</b>：免费，任意一张<b>实体IC卡</b>刷一下即可存取（注意需实体卡，手机NFC不行）。</div>
+    <div class="item"><b>🛋️ 设施</b>：与购物中心相连直达火车站；四楼面包店房卡买饮料打折；停车场¥1,500/24h；免费租借毯子；柜台有即时翻译机；浴室配洗浴凳；配电磁灶/微波炉/洗衣机；电视可看 Netflix/Hulu。</div>
+  </div>
+  <div class="warn">⚠️ <b>修正</b>：① 出口应写<b>北西口（きた西口）</b>而非"北口"——多源点评确认北西口最近（约3分）；② 连廊统一为"北西口 → Hama Rail Walk（はまレールウォーク）连廊 → 4楼大厅"；③ <b>噪音（重要）</b>：双床房靠横滨站轨道，晚上机车声较大，三人间不受影响——要安静选三人间；④ 入住退房按分钟计费不灵活，别迟到；天桥连商厦，商厦早收店，太早/太夜出入不便。</div>
+</section>
+
+<!-- ===================== DAY 1-3 神户 ===================== -->
+
+<div class="day" id="day1">
+  <div class="top"><div class="dname">Day 1 · 8/15 周六 · 神户（抵达 + 神户港花火）</div><div class="dmeta">红眼落地日 · 从简</div><div class="dhotel">🏨 THE皇家花园CANVAS神户三宫</div></div>
+  <div class="body">
+    <table class="schedule">
+      <tr><th class="t">时间</th><th>安排</th><th>耗时</th><th>费用/贴士</th></tr>
+      <tr><td class="t">约06:00</td><td>航班落地关西机场(KIX) T1</td><td>—</td><td>国际到达，先调整状态</td></tr>
+      <tr><td class="t">06:00–06:45</td><td>入境审查 + 取托运行李 + 机场买 ICOCA/Suica、备日元现金</td><td>45min</td><td>日本仍多只收现金小店（前序小红书查证），先换好零钱</td></tr>
+      <tr><td class="t">06:45–08:15</td><td>关西机场 → 神户三宫（利木津 KATE 空港线）</td><td>65–75min</td><td>¥2,200/人（儿童¥1,100）<span class="note-ref">kate.co.jp核实</span>。首班约06:20(T1)易赶不上→乘约07:00起班次，直达三宫免换乘；备选 Bay Shuttle 神户-关空线</td></tr>
+      <tr><td class="t">08:15–08:40</td><td>到 THE皇家花园CANVAS神户三宫 寄行李（14:00后入住）</td><td>—</td><td>三宫站步行5–10min；24h前台免费寄存，轻装出门</td></tr>
+      <tr><td class="t">08:40–09:00</td><td>三宫 → 元町 Isuzu Bakery（步行约12min）买早餐面包边走边吃</td><td>20min</td><td>Isuzu 元町店08:00开/只收现金/8:30后品项齐（香腸麵包toreron必试）；从酒店南下先到元町</td></tr>
+      <tr><td class="t">09:00–10:30</td><td>元町 → 美利坚公园（步行约8min）：BE KOBE + 神户港塔</td><td>1.5h</td><td>BE KOBE 红砖地标免费打卡；港塔登塔可选：展望¥1,000 / +屋顶甲板¥1,200，约9:00起·<b>采时段预约制</b>（部分来源称翻新后10:00开，以官网当日为准）</td></tr>
+      <tr><td class="t">10:30–11:15</td><td>美利坚公园 → 回三宫（原路北上，经南京町外围）：三宫 Center Gai</td><td>45min</td><td><b>ça marche</b>（豆乳面包/法式吐司，可堂食带走）+ <b>top1 吐司店</b>（温热手工吐司，顺路带手信/第二早餐）——两店都在三宫中心街，紧邻</td></tr>
+      <tr><td class="t">11:15–12:15</td><td>三宫午餐</td><td>1h</td><td>Center Gai 周边；想吃元町洋食 <b>Grill一平</b> 则南下约10min；<b>8/15 盂兰盆(8/13–16)</b> 南京町爆满，避开</td></tr>
+      <tr><td class="t">12:30–17:00</td><td>回酒店午休（15:00 正式入住）</td><td>4.5h</td><td>红眼落地第一天必休，养足精神等花火</td></tr>
+      <tr><td class="t">17:00–18:30</td><td>晚餐 + 买老祥记猪肉包（花火前小吃）</td><td>1.5h</td><td>老祥记10:00–18:30卖完即止；<b>傍晚17:25–18:15人少时段</b>买，避白天排队（南京町）；花火后餐厅爆满，晚餐提前吃</td></tr>
+      <tr><td class="t">18:30–20:00</td><td>🌟 神户港周末花火（19:30 开始，约5min）</td><td>1.5h</td><td>位置：<b>美利坚公园·BE KOBE 地标南侧海岸</b>（直面无遮挡、海面倒影最佳）；备选新港第一突堤人少视野好；<b>已核实8/15为常规週末煙火小型版</b>（大型みなとHANABI 2026改至10/19–23），17:30–18:30到公园占位即可；雨天取消看 IG@kobehanabi；结束后步行回酒店约15min</td></tr>
+    </table>
+    <div class="highlight">🎯 本日亮点：红眼落地不勉强，上午 Isuzu 面包散步美利坚公园，傍晚踩中 8/15 周六神户港周末花火，轻松开场。</div>
+    <div class="budget">💰 本日人均参考：交通¥2,200 + 早午餐+小吃 ¥1,500–2,500 ≈ ¥3,700–4,700（不含住宿）</div>
+    <div class="tip">📌 <b>利木津乘车精细指引（IMA核实）</b>：KIX T1 到达厅出即巴士站（正对面、不上下楼）；T1=6号站牌、T2=4号；售票机可选中文；上车可刷 IC/信用卡；行李每人≤2件凭凭证取回。终点「神户三宫」下车点在 Mint神戸 旁（りそな银行前地面层、无楼梯）。车程约 65–75 分。<b>首班 06:20（T1）</b>，06:00 落地赶首班偏紧（实际按约 07:00 班次规划）。</div>
+    <div class="tip">🏨 <b>CANVAS 三宫酒店贴士（IMA核实+点评）</b>：① 自助机办理入住（无前台人工，备好预约邮件）；② 大堂每晚 <b>20:00–22:00 免费冰淇淋 + 气泡水</b>（可自调，娃最爱）；③ 免费咖啡机到 24:00；④ 正对面 24h 唐吉诃德（Don Quijote），买伴手礼/零食超方便；⑤ 离阪急三宫 3–5 分 / JR三宫 6–8 分；⑥ 晚上周边居酒屋多、街头略喧闹（推销/醉酒者），带娃晚归注意。</div>
+    <div class="danger">🚨 避雷：①神户被多篇笔记吐槽"无聊/被低估"、须磨海岸"抽象没意思"——<b>第一天别跑须磨</b>，集中三宫—美利坚公园—元町即够；②"果然在国外，中国人只骗中国人"661赞——警惕景区周边拉客的同胞购物/包车陷阱；③<b>盂兰盆南京町爆满</b>，午餐改元町洋食、包子挪到傍晚人少时段买；④港塔登塔采时段预约制，旺季现场可能售罄，想登塔请提前官网订；⑤花火遇雨取消看 IG@kobehanabi；<b>规模已核实</b>：8/15是常规週末煙火(约5min小型版)，大型みなとHANABI 2026改至10/19–23，按5分钟版17:30–18:30占位即可。<br>｜核查：巴士时长·票价·花火时间·港塔开放·Isuzu/老祥记营业均经官网+WebSearch核实；西村咖啡/Grill一平/ça marche 为参考店，出发前请再确认营业时间。<br>｜2026-07-30 更新：IMA 交通精细指引已嵌入（6 处硬伤修正+利木津/酒店/换乘/门店指引），票价以 2026 ekitan 为准。</div>
+    <div class="food">🥐 早餐：<b>Isuzu Bakery 元町店</b>（08:00开·现金·香腸麵包toreron/咖喱麵包，边走边吃散步去海边）。<br>🥟 小吃：<b>老祥记</b>猪肉包（南京町百年店，傍晚17:25–18:15人少买，作花火前小吃）；想吃神户牛慎点景区和牛摊（水最深），正宗去三宫站周边老店。<br>🍞 手信/吐司：三宫 <b>ça marche</b>（面包大神西川宫晃店，豆乳面包/法式吐司必买）、神户三宫中心街「top1 吐司店」（温热手工吐司，实测真神）。</div>
+  </div>
+</div>
+
+  <div class="day" id="day2">
+    <div class="top"><div class="dname">Day 2 · 8/16 周日 · 神户 → 有马温泉（当日往返）</div><div class="dmeta">松风私汤 · 夏季半日</div><div class="dhotel">🏨 THE皇家花园CANVAS神户三宫</div></div>
+    <div class="body">
+      <table class="schedule">
+        <tr><th class="t">时间</th><th>安排</th><th>耗时</th><th>费用/贴士</th></tr>
+        <tr><td class="t">08:30–09:30</td><td>Canvas三宫起床+早餐（昨晚花火晚睡，自然醒）</td><td>1h</td><td>三人只带去有马的轻便背包，行李寄前台</td></tr>
+        <tr><td class="t">09:30</td><td>神姬巴士 三宫→有马温泉（太阁桥）<span class="note-ref">参考</span></td><td>约30min</td><td>¥600/成人·¥300/儿童，下车付费、不预约；周末约8:30/9:30/10:30发车，满员等下一班</td></tr>
+        <tr><td class="t">10:00</td><td>有马着，步行进温泉街（太阁桥→御所坊约300m）</td><td>10min</td><td>先逛温泉寺/太阁桥/ねね桥，轻装慢走</td></tr>
+        <tr><td class="t">11:00–12:30</td><td>🌟 <b>泡汤前必须吃饱</b>：温泉街早午餐（金汤空腹易晕）</td><td>1.5h</td><td><b>くっろぎ家 Kutsurogiya</b>（和牛釜饭/蒸笼，人均¥2,000–3,500，可能排队40min）／快速备选：竹中肉店可乐饼·牛丼（边走边吃¥500内）／Café de Beau面包咖啡、舒適屋釜饭、tick tac药膳咖喱、蕎麦道山人荞麦面</td></tr>
+        <tr><td class="t">12:30</td><td>到陶泉御所坊主馆前台办理（出示预约邮件→付款，可支付宝）</td><td>30min</td><td>松风 ¥9,900/间·1h + 温泉税¥75/人；拿钥匙步行~300m到「松风」私汤小屋（金汤泉眼）</td></tr>
+        <tr><td class="t">13:00–14:00</td><td>🌟 <b>松风 私汤 1小时（已订✅ 8/16 13:00–14:00）</b></td><td>1h</td><td>亲子包场金汤，免混浴大浴场人挤人；先淋浴再入池，旁边有汗蒸房</td></tr>
+        <tr><td class="t">14:00–14:30</td><td>换衣 + 御所坊1F沙龙休息（免费茶/咖啡·留声机图书）</td><td>30min</td><td>泡完别急，沙龙吹空调回血</td></tr>
+        <tr><td class="t">14:30–15:30</td><td>温泉街伴手礼采购</td><td>1h</td><td>三津森本铺（碳酸仙贝16枚¥600）／吉高屋（金泉美肌肥皂¥880）／汤之花堂（一枚烧24枚¥950）／有马汽水；温泉堂护手霜顺路买</td></tr>
+        <tr><td class="t">15:30–16:00</td><td>步行回太阁桥站</td><td>30min</td><td>预留缓冲，别卡死</td></tr>
+        <tr><td class="t">16:29</td><td>神姬巴士 有马→三宫（或15:29早一班）</td><td>约30min</td><td>¥600/成人；回程满员等下一班，留1h缓冲。<b>尾班约18–19时（约10班/日，神姬巴士官网核实）</b>，即使误了16:29也不至于滞留，但别赌尾班</td></tr>
+        <tr><td class="t">17:00–20:00</td><td>回Canvas取行李休整 → 三宫/元町晚餐（神户牛/洋食）</td><td>3h</td><td>今晚收行李，明日赴京都</td></tr>
+      </table>
+      <div class="highlight">🎯 本日亮点：松风私汤包场泡金汤，避开公共浴场人潮与「水质兑消毒水」吐槽，夏季半日轻松收官。</div>
+      <div class="budget">💰 本日人均参考：交通¥1,200（往返）+ 温泉¥3,400（松风分摊）+ 餐饮¥5,500 ≈ ¥10,100（不含伴手礼）</div>
+      <div class="tip">📌 <b>三宫→有马 大巴乘车点（IMA核实）</b>：神姬巴士（神姫バス）总站在 <b>JR三ノ宫駅东侧高架桥下</b>（不是 Mint神戸 1F 的 JR 巴士站，别走错！）；站牌约 <b>M4</b> 位（橘底白字，现场以标牌为准）；<b>后门上车取整理券</b>，下车投币/IC；下车「有马温泉（太阁桥）」步行 1 分到温泉街。<b>尾班约 18–19 时（约 10 班/日）</b>，即使误了 16:29 也不至于滞留，但别赌尾班。</div>
+      <div class="tip">🚌 <b>大巴票能否提前买？</b> ①常坐的<b>神姬巴士（三宫→有马 ¥600）</b>是路線巴士，<b>不能预约、下车付费</b>，暑期周日可能满员→等下一班（约30–60min一班），建议坐 <b>9:30 或 10:30</b> 早班车避开高峰。②想<b>保证有座/提前买</b>：改乘<b>高速巴士「有马Express号」</b>（经停三宫巴士总站，全席指定），可提前约1个月预约——网：日本巴士e路通（Japan bus online，免费注册可选座）／电话：阪急高速巴士预约中心 <b>0570-089006</b>（9:00–17:00）／也可在 7-11·罗森·全家 终端直接买票（6:00–23:00）。JR西日本「有马Express」三宫发、约¥780（提前7天早鸟¥700）亦可预约（nishinihonjrbus.co.jp）。③御所坊日归周一公休，<b>8/16 周日正常</b>。</div>
+      <div class="danger">🚨 避雷：①<b>务必13:00前吃饱再泡</b>——松风是金汤（含铁钠盐高温泉），空腹易晕汤，尤其带12岁娃。②有马坡多，巴士代步少走路。③公共金之汤/银之汤暑期人多且有人吐槽「水兑消毒水味」，你已订私汤避开。④回程巴士满员要等，晚饭别排太死。</div>
+      <div class="food">🍜 美食：<b>くっろぎ家 Kutsurogiya</b>（和牛釜饭/蒸笼，泡汤前吃最佳）／竹中肉店可乐饼（边走边吃）／Café de Beau 黑豆面包／老松葛饼·炭酸煎饼（伴手礼）。<br>🛍️ 伴手礼：三津森本铺碳酸仙贝、吉高屋金泉肥皂、汤之花堂一枚烧、有马汽水、温泉堂护手霜。</div>
+    </div>
+  </div>
+
+<div class="day" id="day3">
+  <div class="top"><div class="dname">Day 3 · 8/17 周一 · 神户（北野异人馆 + 神戸BAL + SPOPEL珍珠）</div><div class="dmeta">观光日 · 北野老洋房 + 三宮/元町</div><div class="dhotel">🏨 THE皇家花园CANVAS神户三宫</div></div>
+  <div class="body">
+    <table class="schedule">
+      <tr><th class="t">时间</th><th>安排</th><th>耗时</th><th>费用/贴士</th></tr>
+      <tr><td class="t">09:00</td><td>三宫 → 北野（City Loop 观光巴士，三宮→北野異人館站约5min）</td><td>15min</td><td>单程大人¥300（小学生¥150，letsgojp核实；部分源写¥260，以现场为准）<span class="note-ref">参考</span>；<b>不步行硬爬坡</b>（8月晒+体力考虑），也可的士一站¥500-800</td></tr>
+      <tr><td class="t">09:15–11:00</td><td>北野异人馆：风见鸡馆 + 萌黄之馆 + 北野星巴克（老洋房店）休息</td><td>1.5h</td><td><b>2館共通券 大人¥800</b>（高校生以下無料，比单买省）；星巴克在洋馆内吹空调休息</td></tr>
+      <tr><td class="t">11:00–11:20</td><td>北野坂缓坡下坡回三宫（或City Loop回）</td><td>20min</td><td>下坡轻松；之后去三宮/元町午餐</td></tr>
+      <tr><td class="t">11:30–12:30</td><td>午餐 @ 神戸BAL 内 Cafe&Meal MUJI（4–6F，人均¥999起）或 元町 Grill一平</td><td>1h</td><td>神戸BAL 11:00开正好赶上；人均 ¥1,000–2,500<span class="note-ref">参考</span></td></tr>
+      <tr><td class="t">12:30–14:00</td><td>🛍️ 神戸BAL（三宮町3-6-1，元町中心/Tor Road）：MUJI/Ron Herman/ESTNATION 浏览 + Tor Road 散步拍照</td><td>1.5h</td><td>面对Tor Road的主馆+ANNEX；三宮步行约5–10分；户外连廊有遮阴可歇</td></tr>
+      <tr><td class="t">14:00–14:30</td><td>步行 三宮町 → 三宮センター街（SPOPEL所在拱廊，约5–8分）</td><td>30min</td><td>三宮町2-chome，与神戸BAL同街南北向，不绕路</td></tr>
+      <tr><td class="t">14:30–16:00</td><td>💎 SPOPEL神戸の真珠（三宮町2-10-21-2，11:00–19:00，年中無休）</td><td>1.5h</td><td>1F休闲珍珠+定制、2F正装珠宝；隔壁PELMOIR礼品珍珠；真珠振興会認定スタッフ在籍可咨询保养；带12岁娃看巴洛克珍珠很有趣</td></tr>
+      <tr><td class="t">16:00–17:30</td><td>元町商店街 / Tor Road 散步，或回三宮咖啡休息</td><td>1.5h</td><td>视体力；三宮駅周边咖啡/百货可吹空调</td></tr>
+      <tr><td class="t">17:30–</td><td>晚餐 三宮/元町，回酒店收行李（明日赴京都）</td><td>—</td><td>今晚早休</td></tr>
+    </table>
+    <div class="highlight">🎯 本日亮点：上午北野老洋房（神户招牌观光）+ 下午三宮/元町两大确认店（神戸BAL + SPOPEL珍珠），全程集中在"北野丘陵 + 三宮/元町 flat 区"，步行少、休息点多。</div>
+    <div class="budget">💰 本日人均参考：北野2館共通券大人¥800×2=¥1,600（12岁娃免费）+ City Loop¥300×3≈¥900（或的士¥500-800）+ 餐饮¥3,000 + 两店购物弹性 ≈ ¥5,500（不含珍珠购物）</div>
+    <div class="tip">🛍️ <b>神户逛吃门店清单（IMA截图核实，均为三宫/元町步行可达）</b>：<br>
+    ☕ <b>TAOCA COFFEE</b>（神户发源精品咖啡·可试喝·买豆送一杯；元町店 10:00 开）<br>
+    🥩 <b>三田屋本店 大丸神戸店 9F</b>（平价神户牛·铁板/牛排·午餐人均¥2,000–2,999·11:00–21:00）<br>
+    🥩 <b>ステーキランド神戸館 Steakland</b>（神户牛铁板·370席·walk-in 友好·阪急三宫西口1分·Tabelog牛排百名店）<br>
+    👕 <b>THE NORTH FACE / HELLY HANSEN 神戸</b>（浪花町63 KOKO HOTEL 1F 集合店）+ 正对面 <b>Bshop 神戸本店</b>（浪花町59·买手店·同街对望）<br>
+    🏕️ <b>SORA（ミント神戸 6F）</b>（户外选物·Patagonia 短袖多·设儿童区；比大丸店好逛）<br>
+    🐟 <b>磯丸水産 三宮駅前店</b>（24h 连锁海鲜·宵夜·距三宫43m·年中无休）<br>
+    🍬 <b>カンロ 金のミルクキャンディ「濃い贅沢」</b>（奶糖·14.6%濃厚ミルク·各 Donki/药妆有售·手信）<br>
+    ⚠️ <b>2 家待确认→已核实</b>：① 蛤蜊/贝出汁拉面→ <b>KOBE ENISHI 三宮</b>（さんプラザ B1F·鯛白湯/贝系汤底·三宮站徒步5分·11:00–21:00）；② 深夜食堂刺身居酒屋→ <b>大衆酒場 味三昧 三宮店</b>（北長狭通1-8-1 三宮コスモビル3F·阪急神戸三宮站徒步1分·居酒屋/生魚片/海鮮·15:00–24:00 週末至翌1:00·人均¥4,000·Gurunavi核实✅）。</div>
+    <div class="tip">💡 今晚回酒店把行李收好，明天三宫→新神户坐 Hikari 去京都（见 Day4）。神户段三晚住同一酒店，无需搬行李到店外。<br>🗺️ <b>关于"大仓库"的澄清</b>：横滨的「红砖仓库」是知名景点；神户在ハーバーランド也确实有「神戸煉瓦倉庫」（真实存在，含NAGASAWA文具等），但与横滨那座是两码事、且属购物商场而非观光核心。你本次Day3改为"观光+两店"为主，故不再安排港乐园(ハーバーランド)商圈，把体力留给北野+三宮/元町。<br>🏛️ <b>为何只推这两馆</b>：风见鸡館（1909德商私邸·国宝·尖塔黑风见鸡是街区视觉符号）+ 萌黄之館（1903美领事邸·淡苹果绿外墙·最出片）最具代表性且互补，用最低体力/门票 get 精髓；其他馆偏成人主题或需再爬坡，7馆联票¥3,300是暴走配置，不适合低精力+12岁娃。<br>🎫 <b>门票（现场买，不用预约）</b>：<b>2館共通券 大人¥800</b>（風見鶏単館¥500 / 萌黄単館¥500，共通券略省；各源¥650–800不等，以现场为准）；<b>高校生以下無料</b>——12岁中一通常免费，家庭实付约 <b>2×800=¥1,600</b>（带学生证/护照现场确认娃是否免费）。买法：萌黄之館门口自动售票机投现金买共通券→先入萌黄→走隔壁风见鸡（步行1分）出示入馆；風見鶏可刷卡。<br>🕘 <b>营业时间</b>：風見鶏館 约9:00開（闭馆17:00或18:00，以现场为准）、最終入館约闭館前15分；萌黄之館 9:30–18:00（最終17:45）。<br>👟 <b>脱鞋</b>：两馆内部都要脱鞋，穿好脱的鞋。💴 萌黄售票机只收现金，备好日元零钱。<br>🚐 <b>City Loop 不可刷IC卡</b>，单程现金大人¥300（小学生¥150）；一日券¥660仅当搭3次以上才划算，你们搭1–2次买单程更省。<br>💎 <b>SPOPEL补充</b>：官方写年中無休（个别第三方写周三休，8/17周一不影响）；营业11:00–19:00，下午去正好；有自家养殖AKOYA珍珠，价格带广，可现场比价再决定。</div>
+    <div class="food">🍜 美食：神戸BAL内 Cafe&Meal MUJI（亲子友好、吹空调）、元町洋食老店（café フロインドリーブ教会风 / Grill一平）、三宮駅周边食堂。<br>🛍️ 手信：SPOPEL/PELMOIR 珍珠饰品（伴手礼级价位有）、神戸BAL MUJI 限定杂货、北野异人馆纪念品店。</div>
+  </div>
+</div>
+
+<div class="day" id="day4">
+  <div class="top"><div class="dname">Day 4 · 8/18 周二 · 神户 → 京都</div><div class="dmeta">搬家日 · 新干线</div><div class="dhotel">🏨 祇园三条</div></div>
+  <div class="body">
+    <table class="schedule">
+      <tr><th class="t">时间</th><th>安排</th><th>耗时</th><th>费用/贴士</th></tr>
+      <tr><td class="t">08:30</td><td>三宫 → 新神户（地铁约3min）</td><td>15min</td><td>同站换乘，轻松</td></tr>
+      <tr><td class="t">09:00–09:40</td><td>新神户站 坐 のぞみ 新干线 → 京都站</td><td>约35min</td><td>💴 <b>のぞみ指定席 ¥3,830/人（2026年价，ekitan/Navitime核实）</b>，3人 ¥11,490；自由席 ¥2,870；🟡 8/18 已过全指定席期、自由席有，想3人连座可订指定席，不订也能坐。Klook/Trip.com 或 Smart EX（需外网）购票<span class="note-ref">核实 ekitan</span></td></tr>
+      <tr><td class="t">10:00–10:30</td><td>京都站 → 祇园三条酒店（地铁乌丸线→转东西线/公车，约15min）</td><td>30min</td><td>祇园三条近八坂神社、鸭川；非京都站直连，留好接驳时间</td></tr>
+      <tr><td class="t">11:00–13:00</td><td>安顿 + 京都站区购物（伊势丹/大丸/拉面小路）</td><td>2h</td><td>拉面小路人均 ¥1,000–1,500<span class="note-ref">参考</span>；先寄行李再逛</td></tr>
+      <tr><td class="t">14:00–16:00</td><td>祇园 / 花见小路 / 八坂神社散步 + 可选浴衣体验</td><td>2h</td><td>八坂神社、花见小路、鸭川纳凉；浴衣租借约 ¥3,000–5,000/人<span class="note-ref">参考</span></td></tr>
+      <tr><td class="t">16:00–18:00</td><td>SOU·SOU 村（新京极，紧邻河原町/三条，12:00–20:00）</td><td>2h</td><td><b>周二营业</b>（SOU·SOU 仅周三定休，8/18 周二开）；足袋/和装袜/手拭等和风杂货，娃可选童装线</td></tr>
+      <tr><td class="t">18:30–</td><td>先斗町晚餐（京都家常料理）</td><td>—</td><td>人均 ¥3,000–5,000<span class="note-ref">参考</span></td></tr>
+    </table>
+    <div class="highlight">🎯 本日亮点：新干线35min直达京都，下午入住祇园，傍晚散步花见小路 + SOU·SOU 村（周二开）顺路选物，氛围感拉满。</div>
+    <div class="budget">💰 本日人均参考：新干线¥3,830 + 餐饮¥4,500 ≈ ¥8,330（不含住宿）</div>
+    <div class="tip">📌 <b>精细指引（IMA核实）</b>：<br>
+    🚇 <b>三宫→新神户</b>：市营地铁西神·山手线（往「谷上」方向）1 站 / ¥210 / 2–3 分；地铁 B3 层↔新干线 2 楼有电梯串联，换乘 7–10 分；新神户站仅 2 股道、站台窄，上行 2 号线（のぞみ/ひかり 30–35 分）。<br>
+    🚇 <b>京都站→祇园三条</b>：地铁乌丸线（往国际会馆）3 站→乌丸御池换东西线（往六地蔵）2 站→三条京阪(T11) / IC ¥260 / 约 15 分；三条京阪 1/2 号出口电梯上楼步行 4 分。<b>别混淆京阪「三条站」</b>（不同系统）。行李多打车直达京都站约 ¥1,500–2,000。</div>
+    <div class="tip">💡 住祇园三条的代价：坐新干线需先回京都站（地铁约15min）。今天只逛不暴走，明天金阁+岚山才是体力日，今晚早休。</div>
+    <div class="danger">🚨 避雷（小红书查证）：京都多篇「最黑最垃圾店」978赞、「歧视中国人的町屋」1330赞、「寺庙多但这几个咱可不兴去」1792赞——<b>祇园周边餐厅先查评价再进</b>；堂吉诃德退款坑1333赞，购物留小票。</div>
+    <div class="food">🍜 美食：拉面小路（九州/北海道拉面）、先斗町 川床（夏季鸭川边用餐，需预约）、祇园 豆腐料理（南禅寺顺正等）。</div>
+  </div>
+</div>
+
+<div class="day" id="day5">
+  <div class="top"><div class="dname">Day 5 · 8/19 周三 · 京都（河原町购物日 · 6店巡礼）</div><div class="dmeta">购物 · 单向不回头</div><div class="dhotel">🏨 祇园三条</div></div>
+  <div class="body">
+    <table class="schedule">
+      <tr><th class="t">时间</th><th>安排</th><th>耗时</th><th>费用/贴士</th></tr>
+      <tr><td class="t">07:30–09:00</td><td>锦市场（早市：一同堂玉子烧/咖啡波季等）</td><td>1.5h</td><td>小吃人均 ¥1,000–2,000<span class="note-ref">参考</span>；9点前人少；部分摊贩只收现金</td></tr>
+      <tr><td class="t">09:00–09:30</td><td>祇园三条 → 河原町核心（京阪 东山三条→祇园四条 1站3分，或步行南下25分平缓下坡）</td><td>30min</td><td>京阪7号口出即河原町南端；<b>别走地铁东西线→乌丸御池绕路</b></td></tr>
+      <tr><td class="t">10:00–11:30</td><td>高岛屋京都店（开门冲：1F领 Hello Kitty 95折卡 + 护照退税）</td><td>1.5h</td><td>10:00–20:00；有空调</td></tr>
+      <tr><td class="t">11:30–12:30</td><td>高岛屋 7F/B1 午餐 + 避暑（最热时段躲室内）</td><td>1h</td><td>人均 ¥1,500–3,000<span class="note-ref">参考</span>；12–15点室外酷热，大百货里待着</td></tr>
+      <tr><td class="t">12:30–14:00</td><td>京都 LOFT（河原町，有空调，营业至20–21时）</td><td>1.5h</td><td>慢慢逛不怕晚；亲子文具杂货</td></tr>
+      <tr><td class="t">14:00–15:00</td><td>KIDDY LAND（河原町，亲子选物）</td><td>1h</td><td>距 LOFT 步行数分；动漫周边娃喜欢</td></tr>
+      <tr><td class="t">15:00–16:00</td><td>inobun 四条本店（四条通河原町西入御旅町26）</td><td>1h</td><td>距高岛屋/河原町站约数分；<b>务必17:00前到</b>，小店18:00关</td></tr>
+      <tr><td class="t">16:00–16:45</td><td>Bleu Bleuet /（株）表现社（设计选品店）</td><td>45min</td><td>出发前用 Google Maps 确认位置与当日营业（两店偏小众，地址以现场为准）</td></tr>
+      <tr><td class="t">16:45–18:00</td><td>顺路：新京极/寺町散步 或 鸭川纳凉</td><td>1h+</td><td>新京极紧邻河原町；傍晚稍凉再走街</td></tr>
+      <tr><td class="t">18:00–19:00</td><td>先斗町/木屋町 晚餐</td><td>1h</td><td>从河原町走5分；鸭川边餐厅</td></tr>
+      <tr><td class="t">19:00–19:30</td><td>鸭川纳凉散步 → 步行回东山三条消食</td><td>30min</td><td>顺路回酒店</td></tr>
+    </table>
+    <div class="highlight">🎯 本日亮点：河原町1km商圈纯步行串完6店（SOU·SOU周三休已改排Day4），从南到北单向不回头，最热时段躲进高岛屋/LOFT吹空调。</div>
+    <div class="budget">💰 本日人均参考：交通¥300（京阪往返）+ 餐饮¥3,500 + 购物弹性 ≈ ¥3,800+</div>
+    <div class="danger">🚨 <b>关键冲突（已核实）</b>：<b>SOU·SOU 京都各店 周三定休</b>（官方 sousou.co.jp「水曜:定休日」+ 百度百科确认），故 8/19 周三不营业 → 已改排 <b>8/18（周二，开）傍晚 SOU·SOU 村</b>（见 Day4）。伏见稻荷已去过，不重复安排。</div>
+    <div class="tip">💡 <b>路线核查结论（千问链接+联网核实）</b>：①7店全在四条河原町—三条—祇园四条1km商圈，纯步行/京阪1站可串，合理；②<b>删掉错误的地铁选项C</b>（东西线三条→乌丸御池→四条绕远）；③<b>inobun 实际在四条河原町（御旅町26）</b>，不是寺町通，已据搜索更正；④退税满¥5,000、高岛屋1F领 Hello Kitty 95折卡（满¥3,000未税）；⑤8月酷暑，12–15点最热排在有空调大百货，小店放上午/傍晚；⑥Bleu Bleuet/表现社出发前 Google 确认。今晚早休，明天金阁+岚山暴走。</div>
+    <div class="food">🛍️ 店铺：高岛屋(河原町站直通·10-20·Hello Kitty卡95折+7F退税) / 京都 LOFT / KIDDY LAND(河原町) / inobun 四条本店(御旅町26·10-20:30·全年无休) / Bleu Bleuet（株）表现社(设计选品·Google确认) / SOU·SOU 村→已排 8/18 傍晚(新京极)。<br>🍜 美食：锦市场 玉子烧/串物；高岛屋 B1 圣护院八桥生八桥、7F 惠亭炸猪排/无碍山房抹茶帕菲；先斗町 川床（夏季需预约）。</div>
+  </div>
+</div>
+
+<div class="day" id="day6">
+  <div class="top"><div class="dname">Day 6 · 8/20 周四 · 京都（金阁 + 岚山 + 小火车）⚠️暴走</div><div class="dmeta">重点日 · 控步数</div><div class="dhotel">🏨 祇园三条</div></div>
+  <div class="body">
+    <table class="schedule">
+      <tr><th class="t">时间</th><th>安排</th><th>耗时</th><th>费用/贴士</th></tr>
+      <tr><td class="t">08:30</td><td>酒店(祇园三条)出发 → 打车 赴 金阁寺</td><td>30min</td><td>约5.4km，三人分摊省力；不能久走直接打车，实测 ¥4,000 级（correc.co.jp 祇園→金閣寺 ¥4,280/23min）<span class="note-ref">参考</span></td></tr>
+      <tr><td class="t">09:00–10:10</td><td>金阁寺（<b>09:00 开门</b>，官网 shokoku-ji.jp 确认）</td><td>1.25h</td><td>门票 大人¥500/中小学生¥300，<b>只收现金、门口朱印符售票</b>（已涨至¥500，多源一致）；镜湖池倒影必看；单行线不可逆，50–70分从容走<span class="note-ref">核实</span></td></tr>
+      <tr><td class="t">10:20–10:50</td><td>打车 金阁寺 → 小火车嵐山站/御发神社一带</td><td>30min</td><td>约7–8km，三人约 ¥3,680（元宝/千问核实量级）；让司机停御发神社附近省步<span class="note-ref">参考</span></td></tr>
+      <tr><td class="t">11:00–11:40</td><td>🌟 御发神社（みかえじんじゃ·全日本唯一「头发神社」）</td><td>40min</td><td>地址 右京区嵯峨小仓山田渊山町10-2；主祭神 藤原采女亮政之（理发业始祖）；剪刀/梳子造型御守¥800起、粉色最受欢迎。<br>⚠️ 露天小社无硬关门，授与所约9–17点；别被"16点关门"吓到<span class="note-ref">核实</span></td></tr>
+      <tr><td class="t">11:40–12:10</td><td>竹林小径 轻散步（往渡月桥方向）</td><td>30min</td><td>免费；低精力只走前段，不登后山</td></tr>
+      <tr><td class="t">12:10–12:30</td><td>野宫神社（竹林小径入口·黑木鸟居）</td><td>20min</td><td>免费、境内可自由进出；主求良缘/学业(副项)，源氏物语渊源；摸龟石趣味参拜，带娃刚好<span class="note-ref">核实</span></td></tr>
+      <tr><td class="t">12:30–13:30</td><td>岚山午餐 + 回血（避正午暴晒）</td><td>1h</td><td>汤豆腐等当地料理；坐下休息，省体力（<b>不进天龙寺</b>，按低精力原则）</td></tr>
+      <tr><td class="t">13:30–14:30</td><td>渡月桥 + 桂川河边散步</td><td>1h</td><td>免费；河边纳凉，不登岚山后山</td></tr>
+      <tr><td class="t">14:30–14:50</td><td>走回 小火车嵐山站</td><td>20min</td><td>⚠️ <b>上车前看票面</b>：是「嵐山15:05上」还是「嵯峨15:02上」，别上错站（若票为嵯峨発需更早到）</td></tr>
+      <tr><td class="t">15:05</td><td>🚂 嵯峨野观光小火车 嵐山→亀岡（<b>已购✅ 15:05発→15:25着</b>）</td><td>约20min</td><td>标准车厢 大人¥880/儿童(6-12)¥440；3人若全大人¥2,640、娃儿童票则¥2,200<span class="note-ref">参考</span>；保津川峡谷风景（雨天5号露天车厢可能停售）</td></tr>
+      <tr><td class="t">15:25–15:35</td><td>🚨 跟「JR馬堀」指示牌走 → 别跟人流去 JR亀岡站</td><td>10min</td><td>馬堀才是最近JR站，全篇最值钱提醒；步行约8–10分</td></tr>
+      <tr><td class="t">15:40–16:10</td><td>JR馬堀 → 京都站（JR嵯峨野線）</td><td>约30min</td><td>三人 JR 约 ¥320/人<span class="note-ref">参考</span></td></tr>
+      <tr><td class="t">16:15–16:40</td><td>京都站 → 打车回 祇园三条（<b>别走乌丸线→三条错路</b>）</td><td>约20min</td><td>京都站直接打车门到门约 ¥2,000–2,500（元宝/千问核实）；<b>乌丸线不到三条站</b>，莫绕<span class="note-ref">核实</span></td></tr>
+      <tr><td class="t">17:00–19:00</td><td>回房洗澡 + 躺平回血</td><td>2h</td><td>暴走日+8月酷暑，先回血再出门</td></tr>
+      <tr><td class="t">19:00–20:30</td><td>🌟 先斗町/木屋町 晚餐 + 鸭川散步</td><td>1.5h</td><td>从祇园三条步行10–15分；先斗町18:00后灯笼亮、鸭川纳凉；<b>怕挤优先木屋町/鸭川边店</b>（窄巷带娃略挤）<span class="note-ref">核实</span></td></tr>
+      <tr><td class="t">20:30–21:00</td><td>散步回酒店</td><td>30min</td><td>顺路消食</td></tr>
+    </table>
+    <div class="highlight">🎯 本日亮点：金阁倒影 + 全日本唯一「御发神社」(头发神社) + 野宫神社黑木鸟居 + 竹林/渡月桥 + 保津川小火车，低精力不刷庙，下午卡点小火车、晚上回血再出门。</div>
+    <div class="budget">💰 本日人均参考：交通(3人打车+JR分摊)≈¥4,000/人 + 小火车¥730–880 + 金阁寺¥430 + 餐饮¥3,500 ≈ ¥8,700/人（不含御守伴手礼）</div>
+    <div class="tip">⚠️ <b>马堀站电梯（IMA存疑项·已复核）</b>：JR馬堀为对向式 2 面 2 线地面站、业务委托站（设有绿窗口），是否为带电梯的屏障-free 构造未见 JR 西日本官网明确列出。带大件行李/推车行前用 JR西日本「駅情報」(jr-west.co.jp) 复核；无电梯则走阶梯搬箱（行李已寄酒店，轻装不影响）。多数现代 JR 西日本车站已设电梯，但实际以官网为准。</div>
+    <div class="danger">🚨 暴走管控：总步数控 1.5万步内。用打车代步、小火车坐而不走、午休1h、晚回血2h。<b>小火车已购 15:05 嵐山→亀岡（15:25着），列车准点错过不退</b>。两处致命提醒：① <b>上车前看票面</b>确认「嵐山上」还是「嵯峨上」，别上错站；② 亀岡下车 <b>跟「JR馬堀」指示牌</b>，别跟人流去JR亀岡站（馬堀才是最近JR站）。金阁寺门票 <b>只收现金</b>备零钱。松尾大社距岚山核心2.1km需专程搭车，低精力不推。<span class="note-ref">路线参考 元宝规划+千问核查</span></div>
+    <div class="food">🍜 美食：岚山 汤豆腐（京都名物）、先斗町/木屋町 川床（夏季需预约）或鸭川边店；🎁 御发神社 剪刀/梳子御守¥800起（粉色最人气，求头发/学业顺）、野宫神社 御守。</div>
+  </div>
+</div>
+
+<div class="day" id="day7">
+  <div class="top"><div class="dname">Day 7 · 8/21 周五 · 京都 → 名古屋（搬家日 + 热田/大须轻量）</div><div class="dmeta">抵达日 · 文化散步</div><div class="dhotel">🏨 ANA皇冠假日 Grand Court（金山駅南口徒歩1分）</div></div>
+  <div class="body">
+    <table class="schedule">
+      <tr><th class="t">时间</th><th>安排</th><th>耗时</th><th>费用/贴士</th></tr>
+      <tr><td class="t">08:00–10:30</td><td>祇园三条酒店早餐 / 慢起 / 收行李（京都段最后半天）</td><td>2.5h</td><td>行李寄酒店前台，从容收拾</td></tr>
+      <tr><td class="t">10:30–11:00</td><td>祇园三条 → 京都站（地铁约15min）取行李进站</td><td>30min</td><td>预留接驳，别误车</td></tr>
+      <tr><td class="t">12:30–13:10</td><td>京都站 → 名古屋站 のぞみ 新干线</td><td>约35min</td><td>💴 <b>のぞみ指定席 ¥5,910/人（2026年价，ekitan核实；ひかり指定席¥5,700）</b>，3人 ¥17,730；自由席 ¥5,170；🟡 普通周五自由席充裕，想3人连座可订指定席。Klook/Trip.com 或 Smart EX（需外网）购票<span class="note-ref">核实 ekitan</span></td></tr>
+      <tr><td class="t">13:15–13:25</td><td>名古屋站 → 金山駅（JR中央线4分 或 地下鉄名城線3分）</td><td>~10min</td><td>JR中央线 名古屋→金山 约4分/¥180 或 名城線 约3分/¥210 IC；金山是 JR＋名鉄＋地下鉄総合駅<span class="note-ref">核实</span></td></tr>
+      <tr><td class="t">13:30–14:00</td><td>到 ANA皇冠假日 Grand Court（金山駅南口徒歩1分）寄行李</td><td>—</td><td>15:00入住，先寄前台；金山駅直连酒店（雨天不用打伞）</td></tr>
+      <tr><td class="t">14:15–16:00</td><td>🌟 热田神宫（境内免费24h 参拜）</td><td>1.75h</td><td><b>最优路线</b>：金山駅→名鉄名古屋本線 神宮前駅（約3分／¥220 IC）→徒歩3分到東門。<br>境内免费、树荫多不晒；宝物館 9:00–16:30（入館16:10止／大人¥300）若想进15:00前到；8/21周五不撞休館（每月最終水木休）。<span class="note-ref">官网 atsutajingu.or.jp</span></td></tr>
+      <tr><td class="t">16:15–18:00</td><td>大须商店街 + 大须观音寺（先寺后街）</td><td>1.75h</td><td>金山→大须：名鉄或地下鉄鹤舞線 大須観音駅（約8分）；观音寺本堂 <b>17:00 关闭</b>（境内可自由进出），16:30前直奔寺庙再逛街；小店多数19–20点关，晚餐后别指望买手办<span class="note-ref">核实</span></td></tr>
+      <tr><td class="t">18:00–19:30</td><td>大须晚餐（矢場炸猪排等当地味噌料理）</td><td>1.5h</td><td>大须美食密集，味噌系名物；吃完回金山约8–12分</td></tr>
+      <tr><td class="t">19:45–</td><td>回金山酒店休息</td><td>—</td><td>明日荣购物整日空手，今晚早休</td></tr>
+    </table>
+    <div class="highlight">🎯 本日亮点：Hikari 抵达名古屋→金山放箱→热田神宫千年古社参拜→大须观音+商店街小吃，抵达日轻量文化散步不赶场。</div>
+    <div class="budget">💰 本日人均参考：新干线¥5,910 + 市内交通(名鉄+地铁)≈¥500 + 餐饮¥2,500 ≈ ¥8,900+</div>
+    <div class="tip">📌 <b>精细指引（IMA核实）</b>：<br>
+    🚇 <b>三条京阪→京都站</b>：东西线（往六地蔵）2 站→乌丸御池换乌丸线（往国际会馆）3 站→京都站 / 约 15 分。<br>
+    🚇 <b>京都站地铁→新干线</b>：中央口换乘 8–10 分、全程有电梯（kyoto.travel 核实）。行李多打车直达京都站 ¥1,500–2,000。<br>
+    🚇 <b>名古屋站→金山</b>：新干线下车→在来线のりかえ→JR中央线 7/8/10 番线（往多治见/中津川）1 站→金山 ¥180（IC/纸同价，Yahoo!乗換核实）。<b>记死「南口」</b>：金山是 JR+名鉄+地下鉄三合一综合站、易走错口；南口电梯上 1 楼，步行 1 分到 ANA 皇冠假日，雨天不打伞（马路对面即到）。</div>
+    <div class="danger">🚨 <b>酒店位置更正</b>：ANA Crown Plaza Grand Court 在<b>金山駅</b>（非名古屋站），地址 金山町1-1-1，金山駅南口出即到。名古屋站→金山仅3–4分钟列车。金山出发去哪都近：热田神宮名鉄3分、大須8分、荣7–8分。</div>
+    <div class="tip">💡 热田+大须二选一深度也行（带娃抵达日别太满）；若只去一处推荐热田（树荫多、境内免费、更有日本感）。8/23 吉卜力门票已购✅，Day9 单独细化。</div>
+    <div class="food">🍜 美食：大须 矢場とん（味噌猪排·名古屋No.1）、山本屋总本家（味噌煮込乌冬）；热田境内 宫きしめん（きしめん・9:30–16:30 无休）。<br>🚉 <b>金山駅周边</b>也很能吃：Asunal金山（駅直连商场）、駅前多家居酒屋——抵达日晚餐不必跑远。</div>
+  </div>
+</div>
+
+<div class="day" id="day8">
+  <div class="top"><div class="dname">Day 8 · 8/22 周六 · 名古屋（荣商圈购物日 · 橡子共和国 + Seant）</div><div class="dmeta">购物 · 单向不回头</div><div class="dhotel">🏨 ANA皇冠假日 Grand Court（金山駅）</div></div>
+  <div class="body">
+    <table class="schedule">
+      <tr><th class="t">时间</th><th>安排</th><th>耗时</th><th>费用/贴士</th></tr>
+      <tr><td class="t">09:30–09:40</td><td>金山駅 → 栄駅（地下鉄名城線 右回り／左回り）</td><td>~10min</td><td>約7–8分・¥210 IC；<b>金山只能上名城线/名港线，上不了东山线</b>（元宝错写"东山线去荣"，请划掉）<span class="note-ref">核实</span></td></tr>
+      <tr><td class="t">10:00–12:00</td><td>🌟 橡子共和国（どんぐり共和国·吉卜力官方周边店）</td><td>2h</td><td>绿洲21（オアシス21）B1 区域，荣站4号口直通；营业约10:00–20:00（全年无休）；龙猫/魔女琪琪/无脸男等周边，小型¥800起、公仔¥2,500–6,000。<br>⚠️ 别为"扭蛋"10点准点冲（无此机制），正常到即可<span class="note-ref">核实</span></td></tr>
+      <tr><td class="t">12:00–12:30</td><td>荣午餐（松坂屋/PARCO 餐饮楼层 或 绿洲21周边）</td><td>30min</td><td>荣站餐饮密集，带娃选有空调的商场内</td></tr>
+      <tr><td class="t">12:30–14:30</td><td>🌟 Seant（栄3-34-41·生活杂货/文具/家居选品店）</td><td>2h</td><td><b>已联网核实存在✅</b>：地址 栄3丁目34-41、☎052-261-4453、seant.fc2web.com；营业 周三11:00–18:00／其余11:00–20:00、8/22周六全开。厨房餐具/文具/香氛/服饰，适合挑伴手礼。<span class="note-ref">Wanderlog+Foursquare+微博 多源一致</span></td></tr>
+      <tr><td class="t">14:30–17:00</td><td>荣补逛：PARCO / LACHIC / 三越 / 松坂屋 / LOFT + 退税</td><td>2.5h</td><td>荣商圈密度极高，纯步行串完；退税在百货店专柜（护照+小票）；LOFT 文具生活杂货可与 Seant 互补</td></tr>
+      <tr><td class="t">17:00–19:00</td><td>🌟 世界の山ちゃん（名古屋鸡翅·居酒屋）晚餐</td><td>2h</td><td>荣多店：本店(栄4-9-6)或栄店(栄4-16-24)，17:00开、可予約、帯娃OK(有儿童餐具/垫)；招牌 手羽先チキン(鸡翅)＋高丽菜＋啤酒名物；人均¥2,000–3,000<span class="note-ref">yamachan.co.jp / tabelog</span></td></tr>
+      <tr><td class="t">19:00–20:00</td><td>🌟 绿洲21 屋顶「水之宇宙船」夜景 + 散步</td><td>1h</td><td>玻璃穹顶地标免费、19:00后亮灯最美；绕屋顶环形步道看名古屋夜景；荣站直通</td></tr>
+      <tr><td class="t">20:00–20:15</td><td>名城线 栄→金山回酒店</td><td>~15min</td><td>約7–8分・¥210 IC；收拾明日吉卜力行装</td></tr>
+    </table>
+    <div class="highlight">🎯 本日亮点：橡子共和国吉卜力周边 + Seant 杂货选品 + 荣百货扫货 + 世界の山ちゃん鸡翅 + 绿洲21屋顶夜景，购物日一网打尽。</div>
+    <div class="budget">💰 本日人均参考：交通¥420(往返荣) + 餐饮¥3,000 + 购物弹性 ≈ ¥3,400+（不含购物额）</div>
+    <div class="danger">🚨 <b>交通纠错</b>：金山→荣 只能坐<b>名城线</b>（约7–8分／¥210 IC），不存在"东山线直达"选项（东山线走名古屋站—荣—藤之丘那条东西线，不经过金山）。元宝写的"东山线去荣/去藤之丘"是错路，已修正。</div>
+    <div class="food">🛍️ 店铺：橡子共和国(绿洲21B1·吉卜力周边) → Seant(栄3-34-41·杂货选品·周三18:00关) → PARCO/LACHIC/三越/松坂屋/LOFT(补逛·退税)。<br>🍜 美食：世界の山ちゃん(鸡翅·荣多店可预约) / 松坂屋B1 圣护院八桥生八桥 / 绿洲21周边轻食。</div>
+  </div>
+</div>
+
+<div class="day" id="day9">
+  <div class="top"><div class="dname">Day 9 · 8/23 周日 · 名古屋（吉卜力公园）</div><div class="dmeta">⚠️ 门票已购✅</div><div class="dhotel">🏨 ANA皇冠假日 Grand Court（金山駅）</div></div>
+  <div class="body">
+    <div class="ticket">🎫 <b>票型：大散步券 Premium（已购✅）</b> → 全5区可进 + 所有建筑内部可进（哈尔城堡/欧其诺之家/魔女之家/地球屋/小月小梅之家内部）。8/23 周日（假日）Premium 成人¥7,800 / 儿童¥3,900。开园9:00 / 闭园17:00 / <b>16:30 停止各区域入场</b>；<b>大仓库指定 14:00 场，最晚 14:59 前入场，离场不可再入</b>。周二休园（8/23 周日正常开）。<span class="note-ref">已核实：ghibli-park.jp 官方FAQ + letsgojp + ghlipark.guide</span></div>
+    <table class="schedule">
+      <tr><th class="t">时间</th><th>安排</th><th>耗时</th><th>费用/贴士</th></tr>
+      <tr><td class="t">07:00–07:55</td><td>金山駅（南口）出发 → 名城线→荣（8–9分）→ 换东山线→藤之丘（20–25分）→ 换Linimo → 爱·地球博纪念公园站（12–15分）</td><td>~55min</td><td>💴 地铁（名城线→荣换东山线，<b>同属市营地铁联程计费一票到底≈¥340</b>，非两段相加）+ Linimo¥360 ≈ <b>¥700/人</b>（Jorudan/Linimo官网核实）。<b>金山只能上名城线/名港线，东山线不过金山</b>（元宝"东山线45分直达"错）；荣站换东山线<b>别坐反</b>，往藤之丘方向。<span class="note-ref">核实 Linimo官网+谷歌实测</span></td></tr>
+      <tr><td class="t">08:55–09:00</td><td>抵达园区入口，9:00 开园即冲</td><td>5min</td><td>入园先上厕所、涂防晒、补水；手机充满电。</td></tr>
+      <tr><td class="t">09:00–12:00</td><td>🌟 <b>魔女之谷（Valley of Witches）</b>· 开园直冲（趁上午相对凉）</td><td>3h</td><td>
+        <b>① 西茜狗（因因玩偶）限量50只/¥1,200/限购1，上午即售罄</b> → 想买一开园先冲魔女之谷商店排队（携程/小红书实评印证真实，非元宝编造）。<br>
+        ② 哈尔的移动城堡（红顶城堡）外部拍照 → <b>Premium 直进内部</b>（无需现场补券）。<br>
+        ③ 欧其诺之家（魔女宅急便）内部 → Premium 直进。<br>
+        ④ 魔女之家（魔女宅急便3）内部 → Premium 直进。<br>
+        ⑤ 琪琪面包店排队约40分，可买可略（园区餐饮12–13点排队超1h，建议自带干粮）。<br>
+        <span class="note-ref">核实 ghlipark.guide + 波比看世界 + 携程实评</span></td></tr>
+      <tr><td class="t">12:00–13:00</td><td>午餐：自带干粮 / 藤之丘或纪念公园站 Lawson 买好</td><td>1h</td><td>⚠️ 园区餐厅12–13点排队常超1小时，<b>强烈建议自带+便利店干粮</b>；找阴凉/室内位吃，顺带补水防中暑。<span class="note-ref">核实 ajunfun + 小红书避雷</span></td></tr>
+      <tr><td class="t">13:00–13:50</td><td>吉卜力大操场 + DONDOKO之森（地球屋/小月小梅之家，Premium 可进内部）</td><td>50min</td><td>户外遮阴少、占地大，<b>快速过</b>：地球屋、小月小梅之家内部（进屋收手机禁拍）；大操场若娃还有体力可跑，否则略过保体力给大仓库。</td></tr>
+      <tr><td class="t">14:00–16:30</td><td>🏭 <b>大仓库（Grand Warehouse）14:00 场</b>（最晚14:59入场，离场不可再入）</td><td>2.5h</td><td>
+        💡 选14:00场很聪明：<b>无脸男 16:00 后免排</b>（实测14:00场排约20分 vs 早场1小时）；内部全程空调，夏天带娃最舒服。<br>
+        重点：无脸男（留排队时间）、千寻电车、龙猫/天空之城/红猪等场景。<br>
+        16:30 前务必结束（各区域16:30停入场）。<span class="note-ref">核实 ajunfun + 波比看世界</span></td></tr>
+      <tr><td class="t">16:30–17:00</td><td>离园 → 原路返金山（Linimo→东山线→名城线）</td><td>~55min</td><td>🚫 <b>青春之丘默认放弃</b>：原版17:00才去会踩16:30停扫码尾巴，带累娃不值得；若体力爆棚可早上去魔女之谷前插15–20分，否则直接回金山。</td></tr>
+    </table>
+    <div class="highlight">🎯 本日亮点：Premium 全进内部（哈尔城堡/欧其诺/魔女之家/地球屋/小月小梅之家）→ 魔女之谷上午趁凉冲 + 大仓库空调下午续命，夏天带娃最优动线。</div>
+    <div class="budget">💰 本日人均参考：交通往返≈¥1,400（单程≈¥700） + 西茜狗¥1,200(可选) + 午餐干粮/园内弹性（Premium票已购不计入）</div>
+    <div class="tip">📌 <b>吉卜力动线精细指引（IMA核实）</b>：① 周日早东山线挤，<b>8:30 前从金山出发</b>避通勤高峰；② 藤が丘换 Linimo（天桥直连北口步行 5 分到园区）；③ 返程 16:30 后藤が丘买票人多，<b>提前用 IC 卡刷卡进站</b>省排队；④ 全程 55–60 分。💰 地铁联程一票到底（金山→荣→藤が丘同属市营地铁）≈¥340 + Linimo¥360 = ¥700，非两段相加。</div>
+    <div class="danger">🚨 <b>防中暑硬指标（8月33–36°C、遮阴少、卖水点少）</b>：每人带 1.5L 水 + 帽子 + 防晒；每1–2h找阴凉/室内休息；园区间可搭<b>免费接驳巴士</b>或<b>付费猫巴士(约¥600–1,000)</b>代步省力。<span class="note-ref">核实 波比看世界 + ajunfun + 官方</span></div>
+    <div class="tip">📸 <b>拍照红线</b>：所有建筑<b>内部一律禁拍</b>（含5栋：哈尔城堡/欧其诺之家/魔女之家/地球屋/小月小梅之家），进屋收手机；<b>户外可拍</b>。大仓库内部场景也禁拍，勿偷拍。<br>🎒 今晚回金山早休，明日 Nozomi 去横滨（Day10）。</div>
+    <div class="food">🍜 美食：园内 琪琪面包店（限定面包·排40分）/ 自带+Lawson干粮；晚餐 金山駅周边 或 Asunal金山商场内。</div>
+  </div>
+</div>
+
+<div class="day" id="day10">
+  <div class="top"><div class="dname">Day 10 · 8/24 周一 · 名古屋 → 横滨（港未来 + 花火大会）</div><div class="dmeta">搬家日 · 🎆 港未来festival 花火(免费观看✅)</div><div class="dhotel">🏨 相铁酒店乐思横滨</div></div>
+  <div class="body">
+    <div class="ticket">🎫 <b>🎆 横滨港未来festival 花火大会（官方确认免费观看 ✅）</b><br>
+    8/24（周一）举办的是<b>「横滨グリーンエクスポ応援 みなとみらいフェスティバル」</b>（原MMSF/港未来智能节，2025年事故后更名重启），这是横滨夏季最大型花火活动之一。<br>
+    <b>✅ 官方确认：不买票也可在周边公共区域免费观看！</b>日本横滨旅游官方微博(2026-7-3)明确回复"不买票可以找到合适的位置免费观看"。有料席(¥12,000-48,000)仅在临港公园/Hammerhead等<b>指定区域内</b>，属可选升级。Tokyo Weekender/girlswars.com均标注"Price: Free; premium seating available"。<br>
+    📅 日程：大门开放 <b>16:30</b> → 舞台活动 <b>18:00–</b> → 烟花（スカイシンフォニー）<b>19:10–19:55</b>（约20,000发+音乐同步）<br>
+    🎟️ 票价：约 <b>¥12,000–48,000/人</b>（椅子区/草坪区/双人家庭座不等），通过 <b>Pia（チケットぴあ）</b> 或官网 <b>mmsf.yokohama</b> 购买，通常7月初开售。<br>
+    📍 会场：臨港公园 / カップヌードルミュージアムパーク / 横浜ハンマーヘッド(9号岸壁) 等——均为付费观景区。<br>
+    <b>📌 免费观看攻略：</b>① 官方指定有料席区域（临港公园/Hammerhead等）需购票进入，但<b>港未来周边公共区域均可免费观赏</b> → ② 推荐免费占位点：<b>红砖仓库前海岸步道</b>（正对燃放点+红砖建筑同框，微博多位博主认证最佳机位）或 <b>山下公园喷水广场</b>（宽敞适合带娃家庭）→ ③ 16:00起交通管制，16:30前到位占位 → ④ 有料席为可选升级（舒适座位+视野），非必须。<span class="note-ref">核实：日本横滨旅游官方微博(2026-7-3) / yokohamajapan.com / Tokyo Weekender / All About Japan / 微博@一居生活</span></div>
+    <table class="schedule">
+      <tr><th class="t">时间</th><th>安排</th><th>耗时</th><th>费用/贴士</th></tr>
+      <tr><td class="t">09:30–10:45</td><td>名古屋站 → <b>新横滨站</b> Nozomi 新干线</td><td>~1h15m</td><td>
+        💴 <b>自由席 ¥9,900 / 指定席 ¥10,440</b>（のぞみ指定席通常期，ekitan 2026实时数据）<br>
+        🟠 <b>8/24 是横滨港未来花火日</b>、3人+行李想连座，<b>强烈建议提前订指定席</b>（虽非全指定席期、自由席有，但花火日车厢拥挤）。<br>
+        Nozomi 约1h15-16分。<span class="note-ref">核实 ekitan</span></td></tr>
+      <tr><td class="t">10:45–11:00</td><td>新横滨 → <b>横滨站</b>（JR横滨线 or 地铁蓝线）</td><td>~12min</td><td>
+        ✅ <b>JR横滨线</b>：11-14分 / ¥170-180（4号月台→八王子方向，抵横滨后新干线换乘口步行约3分）<br>
+        ✅ <b>地铁蓝线</b>：8-11分 / <b>¥210(IC)起–¥250</b>（更快；官方起价¥210，¥250略估高）<br>
+        ⚠️ 此前写"30min"严重高估，实际含换乘约12-15分。<span class="note-ref">核实 matcha-jp / snowmonkeyresorts / e-japannavi</span></td></tr>
+      <tr><td class="t">11:00–11:30</td><td>抵达相铁酒店乐思横滨 → 寄存行李 → 午餐</td><td>30min</td><td>酒店北西口步行3分连廊直通；大件行李寄酒店或横滨站 locker（大型¥600/日）</td></tr>
+      <tr><td class="t">12:00–16:00</td><td>港未来悠闲逛街（红砖仓库 / MARINE&WALK / 山下公园）+ 晚餐</td><td>4h</td><td>
+        花火<b>免费观看</b>，无需购票！白天轻松逛港未来，16:30前到免费占位点即可。<br>
+        推荐路线：红砖仓库(12:30-14:30) → 山下公园散步(14:30-15:30) → 象鼻公园确认机位(15:30-16:00)</td></tr>
+      <tr><td class="t">16:30–20:00</td><td><b>🎆 横滨みなとみらいフェスティバル 花火（免费观赏）</b></td><td>3.5h</td><td>
+        <b>方案A（推荐）：红砖仓库前海岸步道</b> — 正对临港公园燃放点、红砖+港未来21+摩天轮同框、拍照效果最佳<br>
+        <b>方案B（备选）：山下公园喷水广场</b> — 宽敞舒适适合带娃家庭<br>
+        16:30 占位 → 18:00 舞台/DJ → <b>19:10–19:55 スカイシンフォニー 烟花（~20,000发+音乐同步45分）</b> → 20:00 结束<br>
+        🌧️ 小雨照常；台风/强风可能取消<span class="note-ref">核实 官方微博 + Tokyo Weekender + All About Japan</span></td></tr>
+    </table>
+    <div class="highlight">🎯 本日亮点：Nozomi 1.5h转场横滨 + <b>横滨年度最大花火（~20,000发+音乐同步+港未来天际线同框）</b>。<b>官方确认免费观看 ✅ 不买票也能看！</b>推荐红砖仓库前海岸步道或山下公园免费占位。</div>
+    <div class="budget">💰 本日人均参考：Nozomi自由席¥8,910 + 餐饮¥3,000 ≈ <b>¥11,900</b>（<b>花火免费！</b>若想买有料席升级另加¥12,000-48,000）</div>
+    <div class="danger">🚨 <b>⚠️ 重要更正（来自用户提供的官方微博截图 + 多源交叉验证）</b>：<br>
+    <b>① 此前版本写"全部付费、无免费观赏" -- 已更正为"官方确认免费观看"</b><br>
+    &nbsp;&nbsp;&nbsp;日本横滨旅游官方微博（2026-7-3）第2条明确：8/24（周一）18:00-20:00（16:30开场），花火燃放地为临港公园正前方海面，且官方回复<b>"不买票可以找到合适的位置免费观看"</b>。<br>
+    &nbsp;&nbsp;&nbsp;japan-food.guide写的"不提供免费观赏地点"经与官方微博+Tokyo Weekender("Price: Free")+girlswars.com交叉比对，判断为仅指<b>指定优质区内需购票</b>，非全域收费。<br>
+    <b>② 千问断言"当晚很可能没有这场烟花" -- 也错了。</b>官方微博+yokohamajapan+All About Japan+Trip.com+Tokyo Weekender+微博花火时间表共7源一致确认8/24周一举办。<br>
+    <b>③ Nozomi车程 ~1h15-25分（非元宝写的42分）；新横滨到横滨站 ~12分（非30分）</b> -- 已修正。<br>
+    <b>④ 活动正式名称</b>：2026年从MMSF改名为「横滨グリーンエクスポ応援 みなとみらいフェスティバル」（2027园艺博览会预热）。<span class="note-ref">核实：日本横滨旅游官方微博 / yokohamajapan.com / Tokyo Weekender / All About Japan / 微博@一居生活</span></div>
+    <div class="tip">💡 <b>免费占位攻略</b>：<br>
+    📍 <b>方案A（推荐）：红砖仓库前海岸步道</b> -- 微博多位博主认证的"经典机位"，正对临港公园燃放点、红砖建筑+港未来21天际线+摩天轮同框，拍照效果最佳。16:30前到铺野餐垫占位。<br>
+    📍 <b>方案B（备选）：山下公园喷水广场</b> -- 宽敞舒适适合带娃家庭，有长椅草坪可坐，喷水池+花火+冰川丸同框。<br>
+    🎒 <b>装备清单</b>：野餐垫(必备) + 水1.5L/人 + 防晒帽 + 折叠雨衣(8月海边可能阵雨) + 充电宝 + 防蚊喷雾。<br>
+    ⚠️ 16:00起交通管制；散场时港未来线车站极挤，<b>直接步行回横滨站更快</b>（约20分）。<br>
+    👨‍👩‍👧 带12岁娃：山下公园更宽敞舒服；想拍大片去红砖。</div>
+    <div class="food">🍜 美食：午餐横滨站地下街；下午自备干粮+水（会场周边餐饮摊贵且排长队，建议Lawson买好带去）；晚餐回横滨站周边或酒店附近简餐。<br>
+    🎁 手信：红砖仓库限定商品（下午逛的时候买）。</div>
+  </div>
+</div>
+
+<div class="day" id="day11">
+  <div class="top"><div class="dname">Day 11 · 8/25 周二 · 横滨（本地收官 · 不去东京）</div><div class="dmeta">横滨上午 + 港未来购物</div><div class="dhotel">🏨 相铁酒店乐思横滨</div></div>
+  <div class="body">
+    <div class="ticket">🏨 <b>住 相铁酒店乐思横滨 = 鹤屋町1-41 THE YOKOHAMA FRONT 4F</b>（神奈川区），JR横滨站<b>北西口步行约3分</b>、经「Hama Rail Walk」连廊直通、楼下餐饮密集——等于住在购物枢纽正上方，出发极便利。<span class="note-ref">核实 booking/携程/相铁官网</span></div>
+    <table class="schedule">
+      <tr><th class="t">时间</th><th>安排</th><th>耗时</th><th>费用/贴士</th></tr>
+      <tr><td class="t">09:30–12:30</td><td>🛍️ <b>横滨站三大百货血拼</b>：SOGO + 高岛屋 + JOINUS（10:00开门首冲，室内空调连通不晒）</td><td>3h</td><td>
+        ✅ SOGO（东口经PORTA地下街·10-20）、高岛屋（西口1分·10-20）、JOINUS（西口直达·10-21，400+店）。三家均与车站室内连通。<br>
+        💴 省钱：SOGO <b>95折+2%返现+部分奢牌免1.55%手续费</b>；高岛屋外国客95折+免税——<b>两家都问95折券/优惠，可叠免税</b>（携程/新浪攻略印证）。<br>
+        📌 可逛：高岛屋1F化妆品/7F餐具、SOGO B2食品馆（千层派等）、JOINUS 4F WEGO等。<span class="note-ref">核实 yokohamajapan/letsgojp/携程</span></td></tr>
+      <tr><td class="t">↳ 退税</td><td><b>免税办理</b>：一般服饰/杂货 → <b>B1F 集中退税柜台（带自动退税机）</b>；化妆品1F/食品B2等消耗品各层专柜直接以免税价结算</td><td>—</td><td>
+        🚨 <b>关键纠错</b>：SOGO 免税柜台在 <b>B1F</b>（LiveJapan楼层图/letsgojp/携程一致），<b>不是6F</b>——千问据旧官网写"6F"是过时信息，元宝原写"B1F"反而对。<br>
+        ⏰ <b>退税务必当天 19:00 前办完</b>（柜台通常19:00–19:30截，闭店20:00）；日本退税仅限购物当天，隔天作废。建议上午买完、中午就先退一部分，别堆到晚上（晚你人在元町/中华街，回不去SOGO）。<span class="note-ref">核实 LiveJapan/letsgojp/携程</span></td></tr>
+      <tr><td class="t">12:30–13:30</td><td>横滨站地下街 / 百货食堂层午餐</td><td>1h</td><td>地下街性价比高于地面；补满水（下午户外晒）。</td></tr>
+      <tr><td class="t">13:30–13:45</td><td>港未来线 横滨→马车道（约4分）</td><td>5min</td><td>💴 IC卡 <b>¥193</b>（纸票¥200），刷西瓜卡/PASMO即可；港未来线起价IC¥193。<span class="note-ref">核实 mm21railway官网</span></td></tr>
+      <tr><td class="t">13:45–14:30</td><td>🧱 红砖仓库 <b>2号馆</b>（11:00–20:00，购物主场）</td><td>45min</td><td>✅ 时间对；2号馆偏杂货/服饰/红砖仓库限定伴手礼，1号馆偏艺术展。顺路看1号馆外观即可。</td></tr>
+      <tr><td class="t">14:30–15:30</td><td>🌊 MARINE & WALK YOKOHAMA（11:00–21:00，"天使之翼"壁画+海景）</td><td>1h</td><td>✅ 开放式港口风逛街+拍照，紧邻红砖仓库；2楼海景餐厅可歇脚。</td></tr>
+      <tr><td class="t">15:30–16:30</td><td>海边散步 → Cosmo World 摩天轮外观（不坐）</td><td>1h</td><td>⚠️ Cosmo在樱木町侧、红砖在马车道侧，中间沿海边步行10–15分；<b>8月这段路晒，备水+遮阳伞</b>。摩天轮（太空时钟21）外观拍照省钱，坐一圈+排队不值（带娃低精力）。</td></tr>
+      <tr><td class="t">16:30–17:00</td><td>红砖仓库 <b>1号馆</b>咖啡厅休息（10:00–19:00）</td><td>30min</td><td>✅ 当休息点对；1号馆19:00关，16:30去喝咖啡正好。</td></tr>
+      <tr><td class="t">17:00–17:15</td><td>马车道→元町·中华街（港未来线约4分 / IC¥224，或步行10分）</td><td>15min</td><td>💴 横滨→元町·中华街 IC ¥224。</td></tr>
+      <tr><td class="t">17:15–18:00</td><td>🛍️ 元町商店街（多数店11:00–19:00）</td><td>45min</td><td>
+        ⚠️ <b>8/25是周二</b>（非周日）：元町步行者天国仅周日/节假日实施，<b>今日无此活动</b>；且部分独立小店周二可能定休，<b>趁17:15–18:00抓紧逛，18:00后半数店收摊</b>。<br>
+        🚫 <b>元町整体无免税服务</b>（官方标"免税服务 無"）——大额一般消费留到横滨站百货办；仅街内药妆店(鹤羽)/部分珠宝钟表店可免。<span class="note-ref">核实 yokohamajapan官方</span></td></tr>
+      <tr><td class="t">18:30–20:00</td><td>🍜 中华街晚餐（京华楼 / 狮门酒楼，坐下来正经中餐）</td><td>1.5h</td><td>
+        🚨 避雷（公认游客陷阱，一律不碰）：站着吃小笼/肉包、糖炒栗子、糖葫芦、陌生人拉你看手相算命（均价2000–3000円）；超4000円慎进。<br>
+        ✅ 京华楼/狮门酒楼是老牌酒楼，坐下吃比街边摊靠谱；<b>20:00前到</b>（很多店20:00后厨房停单）。带娃尤其防"拉你看手相"，摆手走别停。</td></tr>
+      <tr><td class="t">20:00–20:25</td><td>回鹤屋町（港未来线/步行）</td><td>25min</td><td>🎒 <b>今晚打包行李 + 免税品集中放一箱</b>（消耗品免税是密封袋、离境前不能拆，海关可能抽检查验）。</td></tr>
+    </table>
+    <div class="highlight">🎯 本日亮点：上午横滨站百货避暑血拼（SOGO/高岛屋/JOINUS室内连通）→ 下午港未来海岸线（红砖+MARINE&WALK+摩天轮外观）→ 傍晚元町+中华街，购物为主+游览为辅+低精力+8月避暑四件事兼顾，是整趟最稳的一天。</div>
+    <div class="budget">💰 本日人均参考：交通(港未来线往返约¥400) + 餐饮¥3,500 + 购物弹性（退税省下的钱最实在）</div>
+    <div class="danger">🚨 <b>三个必须改的硬伤（来自核查）</b>：① SOGO退税在 <b>B1F</b>（非6F），当天19:00前办完否则作废；② <b>8/25是周二</b>，元町步行者天国不适用、部分店周二定休，要逛趁17:15–18:00；③ 8/26返程用 <b>N'EX从横滨直达成田</b>（约90分/¥4,480，不经东京换乘），<b>不是Skyliner</b>——Skyliner只跑上野/日暮里↔成田、不到横滨，别被"Skyliner 41分"误导而漏算横滨→上野的1小时。</div>
+    <div class="tip">💡 <b>MITSUI OUTLET 排除理由（正确，采纳）</b>：横滨港湾奥莱在金泽区、露天+占地大+日晒，接驳巴士仅双休日/节假日运行；8/25周二理论可搭但班次少，低精力+带娃+购物为主，不作为主战场，港未来+元町室内动线更轻松。<br>🎨 杯面博物馆（合味道纪念馆）亲子友好、可自制杯面（需预约）——若想给娃加点博物馆体验，可替换上午百货的某1–1.5h，但会压缩血拼时间，自行权衡。</div>
+    <div class="food">🍜 美食：横滨站食堂层/地下街午餐；红砖仓库洋食；中华街京华楼/狮门酒楼正餐。<br>🎁 手信：横滨站百货食品馆（SOGO B2千层派/高岛屋B1）+ 元町老牌西点；中华街烧卖/月饼伴手礼。</div>
+  </div>
+</div>
+
+<div class="day" id="day12">
+  <div class="top"><div class="dname">Day 12 · 8/26 周三 · 横滨 → 成田 → 香港（返程）</div><div class="dmeta">⚠️ 时间卡死 · 无住宿</div><div class="dhotel">🏨 （无住宿）</div></div>
+  <div class="body">
+    <table class="schedule">
+      <tr><th class="t">时间</th><th>安排</th><th>耗时</th><th>费用/贴士</th></tr>
+      <tr><td class="t">07:30–08:30</td><td>酒店早餐 + 退房（行李寄酒店或横滨站 locker）</td><td>1h</td><td>
+        🎒 行李方案：<br>
+        ① <b>寄酒店</b>：退房后前台寄存（免费，多数酒店提供）<br>
+        ② <b>横滨站 locker</b>：大型 ¥600/日（东急官网钥匙式·现金）；JR手荷物一時預かり所 L尺寸¥2,000/日（10:00-20:00/17:00截止受付）<br>
+        ③ <b>黑猫宅急便</b>：横滨站/酒店直达成田机场¥800/件（当日18:00前取），最省心<span class="note-ref">核实 东急官网 / JR手荷物PDF / 黑猫宅急便价目表</span></td></tr>
+      <tr><td class="t">08:30–11:00</td><td>横滨站周边最后补货 / 轻装散步</td><td>2.5h</td><td>不跑远。横滨站地下街/百货B2食品馆买最后的手信（千层派/蛋糕等）。现金用完可在车站ATM取。</td></tr>
+      <tr><td class="t"><b>11:28</b></td><td><b>🚄 N'EX 横滨站出发 → 成田T2</b>（指定席推荐）</td><td>~1h30m</td><td>
+        ✅ <b>N'EX 确认从横滨站直达成田</b>（不经东京换乘）——JR东日本官网/Klook/RailMonsters/懒懒哥 全部确认。<br>        📍 <b>N'EX 坐到「空港第2ビル」站即 T2</b>；Klook 产品选「成田机场(2-3号航站楼)」正是你要的航站楼（UO849 从 T2 起飞）。<br>
+        🚉 <b>发车月台</b>：横滨站 10 番线（横须贺·总武线上行）固定发车；全车指定席，行李架每节车厢两端；不能仅刷 IC 进站（须另购特急券，IC 可付基本运赁）。<br>
+        ⚠️ <b>行前提示</b>：N'EX 时刻表随 2026-03 改点变动，<b>行前一周用 jreast.co.jp 复核首末班/月台</b>，别依赖旧时刻表。<br>
+        💴 <b>普通车厢指定席 ¥4,480</b> / 绿色车厢 ¥6,750（JR东日本官网票价）<br>
+        ⏰ 推荐车次：<b>11:28发(N'EX#23) → 12:54抵达成田T2</b> 或 <b>12:29发(#27) → 13:53抵T2</b><br>
+        ⚠️ 此前写"10:00出发"过于保守；11:28发车→12:54到T2机场，离15:45起飞还有近2h45分值机+安检+免税，时间充裕。<br>
+        ❌ <b>不要坐14:28发的那班</b>——15:57才到T2，你15:45已经起飞了。<span class="note-ref">核实 JR东日本官网 / Navitime时刻表 / Klook</span></td></tr>
+      <tr><td class="t">13:00–14:30</td><td>抵达成田 T2 → 值机 / 托运 / 安检 / 出境审查</td><td>1.5h</td><td>国际航班建议提前2-2.5h；15:45起飞的航班，13:00前完成值机最稳。<br>
+        🛃 免税品（消耗品类密封袋）海关可能抽检——8/25晚已集中归箱的话直接交。</td></tr>
+      <tr><td class="t">15:45 / 19:40</td><td>✈️ 成田 T2 起飞 → 香港落地</td><td>—</td><td>返程圆满结束🎉</td></tr>
+    </table>
+    <div class="highlight">🎯 本日亮点：N'EX 横滨直达成田（约90分），11:28出发即可从容登机。</div>
+    <div class="budget">💰 本日人均参考：<b>N'EX ¥4,480</b>（普通车厢指定席/JR东日本官网价；Klook/Trip.com 通常更便宜约 ¥3,800–3,900 日元/人，选「成田机场(2-3号航站楼)」）+ 餐饮弹性<br>
+    ⚠️ 此前预算写的"¥3,240"偏低——应以 JR 官网 ¥4,480 为准（Navitime 含手续费显示 ¥6,310，Klook 可能有促销但波动大）。</div>
+    <div class="danger">🚨 <b>时间红线</b>：<br>
+    ① <b>11:28 前从横滨站上 N'EX</b>（推荐#23次，12:54到T2）；最迟 <b>12:29</b>（#27次，13:53到T2，偏紧但不误机）。<br>
+    ② <b>绝对不要坐 14:28 或更晚的班次</b>——到机场时飞机已经飞走了。<br>
+    ③ N'EX 全车指定席（自由席也是指定席价的"未指定座席票"），旺季建议提前1个月通过 <b>SmartEX</b> 或 JR东日本在线预订系统购票。<br>
+    ④ <b>JR Pass 不能坐 N'EX</b>（京成电铁非 JR），需另购 N'EX 专用票。<br>
+    ⑤ <b>行李规则</b>：你家箱子 64×42×28=134cm（三边和<160cm），<b>不算特大行李</b>，买普通指定席即可，<b>不用订特大荷物席</b>（JR 特大行李=三边和>250cm 或单边>200cm 才需预约）。</div>
+    <div class="tip">💡 <b>行李最优解</b>：黑猫宅急便（ヤマト運輸）从酒店/横滨站直送成田机场，¥800/件/当日取——到了机场行李柜台直接领，全程不用自己提。比 locker 更省心。<br>
+    💡 <b>备选方案</b>：如果 N'EX 票售罄或想省钱，可走「横滨→JR日暮里(50分)→Skyliner→成田(41分)」总约1.5h，但需换乘+Skyliner另购票，不如 N'EX 一趟直达省心。</div>
+  </div>
+</div>
+
+<section id="transport-book">
+  <h2 class="sec">🚄 交通提前预订清单（盂兰盆节特别版）</h2>
+  <div class="highlight">📅 <b>节假日背景（已联网核实）</b>：2026 年盂兰盆节（お盆）企业惯休约 <b>8/13(四)–8/16(日)</b>，叠加 8/11(二)「山之日」法定假日，8/11–8/16 为回乡/出游最高峰。<br>
+  🔴 <b>决定性事实（JR东海官方）</b>：2026 年「のぞみ」<b>全车指定席（无自由席）期间 = 8/7(五)–8/16(日)</b>。你的 3 段新干线（8/18 / 8/21 / 8/24）全部在 8/16 之后 → <b>都不在强制全预约期内（8/17 起のぞみ恢复自由席，故 8/18/8/21/8/24 均可买自由席上车）</b>；但 8/18、8/21 仍处夏期繁忙、3 人+行李建议提前锁指定席更稳。<br>
+  ⚠️ <b>12 岁在 JR 算大人</b>：儿童票仅 6–11 岁（「12 岁小学生」例外仅限日本籍小学生，外国游客不适用）→ <b>3 人全买大人票</b>，下表 JR 段价格均按大人计。</div>
+  <table class="schedule">
+    <tr><th>日期</th><th>路段</th><th>盂兰盆影响</th><th>是否需提前买</th><th>购买渠道</th><th>价格（大人 / 小孩）</th></tr>
+    <tr><td class="t">8/15 周六</td><td>KIX 关西机场 → 神户三宫</td><td>🔴 最繁忙期·返程最高峰</td><td><b>强烈建议提前订</b>（当天易满）</td><td>关西机场交通 <a href="https://www.kate.co.jp/pc/tcn/timetable/detail/KB" target="_blank">kate.co.jp</a>（中/英）</td><td>单程 ¥2,200 / ¥1,100<br>首班 KIX 6:20（你近6点落地可赶）</td></tr>
+    <tr><td class="t">8/18 周二</td><td>新神户 → 京都（のぞみ）</td><td>🟡 全指定席期已过(8/16止)·自由席有</td><td><b>🟡 可选：想3人连座订指定席</b></td><td><a href="https://smart-ex.jp/" target="_blank">Smart EX</a> / Klook / Trip.com</td><td>指定席 ¥3,830 / 自由席 ¥2,870<br>（2026年价，3人全大人 ¥11,490）</td></tr>
+    <tr><td class="t">8/21 周五</td><td>京都 → 名古屋（のぞみ）</td><td>🟡 非繁忙期(盂兰盆8/7-16已过)</td><td><b>🟡 可选：想3人连座订指定席</b></td><td><a href="https://smart-ex.jp/" target="_blank">Smart EX</a> / Klook / Trip.com</td><td>指定席 ¥5,910 / 自由席 ¥5,170<br>（2026年价，3人全大人 ¥17,730）</td></tr>
+    <tr><td class="t">8/24 周一</td><td>名古屋 → 新横滨（Nozomi）</td><td>🟢 闲散期·自由席有</td><td><b>🟠 强烈建议：横滨花火日+3人行李连座</b></td><td><a href="https://smart-ex.jp/" target="_blank">Smart EX</a> / Klook / Trip.com</td><td>指定席 ¥10,440 / 自由席 ¥9,900<br>（通常期，3人全大人 ¥31,320）</td></tr>
+    <tr><td class="t">8/26 周三</td><td>横滨 → 成田 T2（返程15:45 UO849·HK Express）</td><td>🟢 盂兰盆后</td><td><b>N'EX：建议锁座<br>利木津巴士：必须提前预约</b></td><td>N'EX：Klook / Trip.com / JR东日本 eki-net<br>利木津：<a href="https://www.limousinebus.co.jp/" target="_blank">limousinebus.co.jp</a> 或京急巴士预约网</td><td>N'EX 单程 ¥4,480×3人（12岁算大人）<br>利木津巴士 ¥4,000×3人（事前预约制）</td></tr>
+  </table>
+  <div class="danger">🚨 <b>今天（7/23）就要做的 3 件事</b>：<br>
+  ① <b>KIX→神户巴士</b>：现在去 kate.co.jp 订 8/15 第一班（KIX 6:20 发）→ 神户三宫，单程 ¥2,200×3人（12岁算大人，全票）。<br>
+  ② <b>京都→名古屋(8/21)</b>：Smart EX 已于 7/21 开订 → 立即锁 3 人连座（のぞみ指定席 ¥5,910/人，2026年价）。<br>
+  ③ <b>名古屋→新横滨(8/24)</b>：Smart EX 明日（7/24）10:00 开订 → 设提醒，第一时间锁 Nozomi 指定席 ¥10,440/人 + 大件行李（花火日强烈建议）。</div>
+  <div class="tip">💡 <b>购买指引</b>：<br>
+  • <b>Smart EX</b>（smart-ex.jp）：免费注册，绑定信用卡+IC卡（Suica/ICOCA），提前1个月（乘车前月同日10:00）开订，可改签/部分退票；3人同一订单锁连座。外国游客也可注册。<b>但需访问外网，国内家宽可能装不了 App</b>。<br>
+  • <b>Klook / Trip.com（推荐，国内可访问）</b>：JR 官方合作平台，新干线 + N'EX 均可购，QR 码直接乘车、出发前1小时可改退；不用翻墙。新干线在 Klook 搜「东海道新干线」、N'EX 搜「成田特快」即可。<br>
+  • <b>KIX→神户巴士</b>：kate.co.jp 在线选「神戸三宮」线，可刷卡；也可到 KIX 1F 巴士售票机现场买（但盂兰盆当天建议先网购锁位）。<br>
+  • <b>N'EX（横滨→成田）</b>：外国游客可在横滨/成田 JR 售票处或「JR东日本」官网买；单程 ¥4,480。行李多建议提前在 eki-net 锁指定席（车厢两端有大件行李架）。亦可考虑<a href="https://www.kuronekoyamato.co.jp/" target="_blank">黑猫宅急便</a> 把行李从酒店直送成田机场（约¥800-1,000/件，当日达），人轻装上车。<br>
+  • <b>利木津巴士（横滨→成田）</b>：limousinebus.co.jp 或京急巴士预约网（cs.keikyu-bus-ticket.jp，需会员）提前预约，<b>事前预约制、不预约不能坐</b>；大人 ¥4,000、小孩 ¥2,000；横滨站巴士总站发车，直达成田T1/T2/T3，行李放车底最省心。</div>
+  <div class="warn">⚠️ <b>两个常见坑</b>：① 利木津巴士「事前预约制」——别以为现场能买，8/26 虽过盂兰盆但仍建议提前约；② N'EX 单程 ¥4,480，外国游客「N'EX东京往返券 ¥5,200」是来回票，你只去程用会浪费，直接买单程即可。</div>
+</section>
+
+<section id="reserve">
+  <h2 class="sec">📌 必做预约清单</h2>
+  <div class="chips">
+    <span>✅ 吉卜力公园 8/23（Premium·已购✅ / Boo-Woo Ticket）</span>
+    <span>✅ 嵯峨野小火车 8/20 15:05（已购✅ / 15:25抵亀岡 / JR西日本官网）</span>
+    <span>✅ 新干线×3段（提前1月 Smart EX：新神户→京都 / 京都→名古屋(8/21) / 名古屋→新横滨）</span>
+    <span>✅ 神户花火 8/15 + 横滨花火 8/24（免费，提前1h占位）</span>
+    <span>✅ 去程 KIX 近6点 / 返程成田15:45（已订）</span>
+    <span>⚠️ 签证（中国护照赴日需旅游签，行前办妥）</span>
+  </div>
+  <table>
+    <tr><th>项目</th><th>渠道</th><th>时点</th></tr>
+    <tr><td>吉卜力公园（Premium·已购✅）</td><td>Boo-Woo Ticket 官网抽选</td><td>8/23 票已入手，按14:00大仓库场规划</td></tr>
+    <tr><td>嵯峨野观光小火车</td><td>JR西日本官网 / 绿色窗口</td><td>发车前1月</td></tr>
+    <tr><td>新干线指定席</td><td>Smart EX / JR West（英文）</td><td>发车前1月</td></tr>
+    <tr><td>杯面博物馆（Day11 自制杯面）</td><td>官网预约</td><td>当天或提前</td></tr>
+  </table>
+</section>
+
+<section id="avoid">
+  <h2 class="sec">⚠️ 避坑提示（含小红书真实查证）</h2>
+  <h3>🇯🇵 通用避雷</h3>
+  <div class="danger">🚨 「同一站台来三趟不同车」1.6万赞 → <b>新干线/电车务必核对车次 + 车厢号</b>，持指定席对号入座。</div>
+  <div class="danger">🚨 「日本打车，司机说这辈子都没见过的数字」756赞 → 打车极贵，市内用地铁+IC卡；不能久走才偶尔打车。</div>
+  <div class="danger">🚨 「来日本旅游不看这条小心给人做局」1万赞 → 不理景区周边拉客/陌生推荐；「电车延误、JR/地铁票混用被赶下车」460赞 → JR与私铁票分开买。</div>
+  <div class="warn">⚠️ 备足日元现金：大量小店/小吃摊只收现金；随身零钱包（小红书高频提醒）。</div>
+  <h3>🏙️ 各城专坑</h3>
+  <div class="kv">
+    <div class="item"><b>神户</b>：须磨海岸被评"抽象没意思"别去；"中国人只骗中国人"661赞——警惕同胞拉客的购物/包车陷阱。</div>
+    <div class="item"><b>有马</b>：夏季避雷（太热/水质争议/太阁之汤劝退/花3000踩雷酒店525赞）→ 只泡公共金之汤银之汤、半日即走。</div>
+    <div class="item"><b>京都</b>："最黑最垃圾店"978赞、"歧视中国人町屋"1330赞、"寺庙不兴去"1792赞 → 祇园餐厅先查评；堂吉诃德退款坑1333赞留小票；宇治避雷帖避开。</div>
+    <div class="item"><b>名古屋</b>："不做攻略会被惩罚"188赞；"带娃慎选新荣商圈"94赞（你住名古屋站已避开）；机场→市区血泪帖291赞（你从站出发不受影响）。</div>
+    <div class="item"><b>吉卜力</b>：巨难约293赞；高级票(Premium)不值96赞——但该评价指"只逛户外即可"，<b>你已购 Premium 正是为了进哈尔城堡/欧其诺/魔女之家等所有建筑内部</b>（本行程核心），所以对你值；大仓库选14:00场避开无脸男长队（见 Day9）。</div>
+    <div class="item"><b>横滨</b>：城市被评"无聊"；洲际多条避雷（你住相铁乐思避开）；花火日人极多看好娃。</div>
+    <div class="item"><b>东京</b>：涉谷 sky"最大骗局"2141赞不登；"阴阳价目表"2332赞走正规百货；进站被吼→主动刷卡/票。</div>
+  </div>
+</section>
+
+<section id="packing">
+  <h2 class="sec">🎒 行前物品清单（日本8月专项）</h2>
+  <div class="kv">
+    <div class="item"><b>📄 证件</b>：护照（有效期6月+）、旅游签证、机票/酒店确认单、IC卡（Suica/ICOCA）。</div>
+    <div class="item"><b>👕 衣物</b>：速干T恤×5、轻薄长裤×3、防晒薄外套×1、舒适运动鞋+凉鞋。</div>
+    <div class="item"><b>🧴 日用品</b>：防晒霜SPF50+、遮阳帽/伞、便携小风扇、保温杯、转换插头（A型两脚）。</div>
+    <div class="item"><b>💊 药品</b>：藿香正气/电解质粉（防中暑）、创可贴、肠胃药、晕车药。</div>
+    <div class="item"><b>💳 钱/电</b>：日元现金（建议人均5–8万）、信用卡、充电宝、零钱包。</div>
+  </div>
+</section>
+
+<section id="graph">
+  <h2 class="sec">🌳 行程知识图谱</h2>
+  <div class="tree">日本12天11晚（父母+12岁娃 · 关西进→名古屋中转→关东出）
+├── ✈️ 去程 8/15 KIX近6:00 → 神户三宫
+├── 🏨 神户 THE皇家花园CANVAS（3晚）
+│   ├── Day1 抵达+神户港花火(19:30) → 轻松
+│   ├── Day2 有马温泉半日(夏季避雷) → ¥5,400
+│   └── Day3 北野+神戸BAL+SPOPEL珍珠 → ¥5,500
+├── 🚄 新神户→京都 Hikari(35min)
+├── 🏨 京都 祇园三条（3晚）
+│   ├── Day4 赴京都+祇园/先斗町 → ¥10,000
+│   ├── Day5 锦市场+河原町购物 → ¥3,800
+│   ├── Day6 金阁+岚山+小火车(暴走) → ¥8,500
+│   └── Day7 上午机动+赴名古屋 → ¥8,620
+├── 🚄 京都→名古屋 Hikari(35min)
+├── 🏨 名古屋 ANA皇冠假日（3晚）
+│   ├── Day8 热田+大须+荣 → 弹性
+│   └── Day9 吉卜力公园(Premium·已购✅) → 成人¥7,800/儿童¥3,900
+├── 🚄 名古屋→新横滨 Nozomi(1h15m)
+├── 🏨 横滨 相铁酒店乐思（2晚）
+│   ├── Day10 港未来+横滨花火(免费观看✅) → ¥11,900
+│   └── Day11 横滨本地(港未来购物) → 弹性
+└── ✈️ 返程 8/26 横滨→成田(N'EX直达·不经东京)→香港15:45/19:40（无住宿）</div>
+</section>
+
+<section id="food">
+  <h2 class="sec">🍜 美食清单（must-eat）</h2>
+  <div class="kv">
+    <div class="item"><b>关西·神户</b>：南京町中华街小笼/包子、神户牛（去三宫老店非景区摊）、元町洋食、有马老松葛饼/荞麦。</div>
+    <div class="item"><b>关西·京都</b>：拉面小路、先斗町川床（夏季鸭川）、汤豆腐（岚山）、锦市场玉子烧/串物、南禅寺顺正豆腐、1905年抹茶冰淇淋<span class="note-ref">IMA「旅行」库</span>。</div>
+    <div class="item"><b>中部·名古屋</b>：矢場とん味噌猪排、山本屋味噌煮込乌冬、世界の山ちゃん鸡翅、蓬莱軒鳗鱼饭（排队）、虾仙贝伴手礼；另有 うな富士白壁别邸（米其林鳗鱼饭三吃·需官网预约）、最飛びヒレ家 馬喰一代（飞弹牛烧肉）、未百也本店（名古屋站·虾片/鳗鱼·walk-in排队）<span class="note-ref">IMA「旅行」库补充</span>。<br>🚉 站周边甜点/轻食：HARBS 水果千层、黑柴燕子吐司、espresso works brunch（久屋大通）、荣站饭团炸鸡店（便宜）、东别院朝市。</div>
+    <div class="item"><b>关东·横滨</b>：横滨中华街小笼/烧卖、红砖仓库洋食、杯面博物馆咖啡、港未来购物区餐饮。</div>
+  </div>
+</section>
+
+<section id="scenery">
+  <h2 class="sec">📸 风景速览</h2>
+  <div class="chips">
+    <span>🌆 神户港塔 + BE KOBE 红砖墙</span>
+    <span>🎆 神户港周末花火（8/15）</span>
+    <span>♨️ 有马金之汤炭酸泉</span>
+    <span>🏯 北野异人馆老洋房</span>
+    <span>🏯 金阁寺镜湖池倒影</span>
+    <span>🎋 岚山竹林 + 保津川小火车</span>
+    <span>🎨 吉卜力大仓库</span>
+    <span>🏰 名古屋绿洲21玻璃穹顶</span>
+    <span>🧱 横滨红砖仓库 + 港未来天际线</span>
+    <span>🎆 横滨みなとみらい花火（8/24）</span>
+    <span>🗼 横滨中华街 + 山下公园海岸</span>
+  </div>
+</section>
+
+<footer>
+  <p>以上信息基于公开资料与小红书真实游记查证整理，实际票价、预约政策、营业时间以各景区/交通/平台官方发布为准。</p>
+  <p>🗾 日本12天11晚攻略 · 路小鲜 Leo · 生成于 2026-07-21</p>
+</footer>
+</div>
+</body>
+</html>
